@@ -6,7 +6,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "build:static": "nuxt generate",
     "test": "jest",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,vue,json}\""
   },

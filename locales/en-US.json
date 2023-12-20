@@ -1,0 +1,419 @@
+{
+  "home": {
+    "banner_title": "Healthy Hearts, Cozy Homes.",
+    "serviceList": {
+      "item1": {
+        "title": "Real Estate for Investment"
+      },
+      "item2": {
+        "title": "Residential Real Estate"
+      },
+      "item3": {
+        "title": "Medical Intermediary"
+      },
+      "item4": {
+        "title": "Travel Intermediary"
+      }
+    },
+    "serviceSectionList": {
+      "item1": {
+        "title": "Real Estate for Investment",
+        "desc": "With a mission of 'increase, assist, support, connect,' we provide support for real estate investment, creating a stable living foundation, and assisting in realizing dreams. Experienced real estate investors propose optimal solutions for clients.",
+        "tips1": "Increase: Support for income-generating properties",
+        "tips2": "Assist: Management and tax consulting",
+        "tips3": "Support: Property management",
+        "tips4": "Connect: Community operations"
+      },
+      "item2": {
+        "title": "Residential Real Estate",
+        "desc": "Management and tax consulting for landlord businesses",
+        "tips1": "Focused on the living environment for optimal relocation solutions",
+        "tips2": "Support for those facing challenges in property purchase"
+      },
+      "item3": {
+        "title": "Medical Intermediary",
+        "desc": "In medical intermediary, we strive to find the optimal medical solutions. Through close collaboration with medical experts, we offer professional advice and personalized services to ensure a smooth and effective treatment process.",
+        "tips1": "Precision matching for medical needs in medical intermediary",
+        "tips2": "We bridge the gap in medical services, guiding you on your path to health with meticulous care.",
+        "tips3": "Specialized services in medical intermediary, cherishing each step and promising the highest quality medical experiences."
+      },
+      "item4": {
+        "title": "Travel Intermediary",
+        "desc": "Discover the beauty of the unknown with our travel agency. Explore unique destinations, enjoy customized itineraries, and realize the journey of your dreams.",
+        "tips1": "Explore unique destinations",
+        "tips2": "Specialized customized itineraries",
+        "tips3": "Realize the journey of your dreams"
+      }
+    }
+  },
+
+  "header": {
+    "btnList": {
+      "list1": {
+        "title": "Services"
+      },
+      "list2": {
+        "title": "Company Overview"
+      },
+      "list3": {
+        "title": "Contact Us"
+      },
+      "list4": {
+        "title": "News"
+      }
+    },
+    "langMenu": {
+      "lang_zh": "中文 (中国)",
+      "lang_en": "English",
+      "lang_ja": "日本語"
+    },
+    "nav_menu": {
+      "item1": {
+        "lang_zh": "中文 (中国)",
+        "lang_en": "English",
+        "lang_ja": "日本語"
+      },
+      "item2": {
+        "title": "Home"
+      },
+      "item3": {
+        "title": "Services",
+        "children": {
+          "li1": "Investment Properties",
+          "li2": "Residential Properties",
+          "li3": "Medical Intermediary",
+          "li4": "Travel"
+        }
+      },
+      "item4": {
+        "title": "Company Overview",
+        "children": {
+          "li1": "About Us",
+          "li2": "Career Opportunities"
+        }
+      },
+      "item5": {
+        "title": "Latest Information",
+        "children": {
+          "li1": "Real Estate Updates",
+          "li2": "Medical Insights",
+          "li3": "Travel News",
+          "li4": "Corporate Updates"
+        }
+      },
+      "item6": {
+        "title": "Contact Us",
+        "children": {
+          "li1": "General Inquiries",
+          "li2": "Real Estate Management & Intermediary",
+          "li3": "Business Inquiries"
+        }
+      }
+    }
+  },
+  "about": {
+    "type1": {
+      "title": "About Us",
+      "serviceList": {
+        "item1": {
+          "title": "Vision"
+        },
+        "item2": {
+          "title": "Message"
+        },
+        "item3": {
+          "title": "Mission Statement"
+        },
+        "item4": {
+          "title": "Careers"
+        }
+      },
+      "serviceSectionList": {
+        "item1": {
+          "title": "Building Bridges for Dreams",
+          "desc": "Building strong bridges for your dreams. Through specialized services, we connect dreams to reality, enabling your aspirations to come true and embark on the path to success.",
+          "tips1": "Bridging dreams, we support. Through unique partnerships, we commence a distinctive journey towards success.",
+          "tips2": "Assisting landlords: Business and Tax Consultation",
+          "tips3": "Building bridges to dreams. Our services are the link between dreams and reality, guiding you towards a wonderful journey."
+        },
+        "item2": {
+          "title": "Supporting Dream Realization",
+          "desc": "We aspire to support you in realizing your dreams. Through professional guidance and customized services, we assist in turning your dreams into reality.",
+          "tips1": "Supporting dream realization. With professional support, embark on a unique journey towards success.",
+          "tips2": "We support dreams. With customized services, we walk together towards the realization of dreams, sharing success.",
+          "tips3": "Turning dreams into reality. With professional guidance and personalized services, take confident steps towards realizing your dreams."
+        },
+        "item3": {
+          "title": "Mission Statement",
+          "desc": "SEA is dedicated to providing warm homes through professional real estate intermediary services.",
+          "tips1": "Medical intermediaries support health, travel intermediaries explore unknown beauty, adding color to unique journeys.",
+          "tips2": "These constitute our mission statement, based on compassion, expertise, and creativity. We meet diverse needs for homes, health, and travel, collectively creating wonderful chapters of a happy life."
+        },
+        "item4": {
+          "title": "Careers",
+          "desc": "We implement a recruitment system for new graduates, second new graduates, and inexperienced IT engineers.",
+          "tips1": "Qualifications: Graduates or expected graduates of junior colleges, four-year or six-year universities, as well as graduates or expected graduates of universities, graduate schools, and vocational training schools (applicants with work experience can also apply). Applications are welcome regardless of nationality (Japanese language proficiency is required), and proficiency in English is highly desirable. Even those without experience can apply! We believe that a sincere and positive attitude towards work is important.",
+          "tips2": "Desired qualities: Communication and coordination skills with team members and clients. Responsible, honest, and serious approach to work. Able to progress work responsibly while collaborating with others. Proactive in taking on new challenges. Flexible in responding to changes in business.",
+          "tips3": "Salary: From 180,000 yen (Experienced individuals will be given preferential treatment.) *Regular employment system available.",
+          "tips4": "Benefits: Various social insurance provided.",
+          "tips5": "Holidays: Over 120 days of annual holidays. Complete two-day weekends (Saturday and Sunday).",
+          "tips6": "How to apply: Send an email to info@sea-itsoft.com, fill out the resume template, and send it to the above address.",
+          "recruit_tex": "View the latest recruitment information"
+        }
+      },
+      "supportList": {
+        "tex1": "Development, repair, and construction of computer systems",
+        "tex2": "Installation, construction, and maintenance of internet servers",
+        "tex3": "Guidance and education on computer systems"
+      },
+      "adress": {
+        "title": "Company Details",
+        "tex1": "Company Name",
+        "tex2": "株式会社SEA-Biz",
+        "tex3": "Address",
+        "tex4": "2 Hatoya Building, 3F, Kanda Nishifukudamachi, Chiyoda-ku, Tokyo 101-0037",
+        "tex5": "4 minutes walk from Shimbashi Station, 5 minutes walk from Kanda Station, 8 minutes walk from Iwamotocho Station, 9 minutes walk from Kodenmacho Station",
+        "tex6": "JR Sobu Main Line, JR Yamanote Line, Ginza Line, Toei Shinjuku Line, Hibiya Line, JR Chuo Line, JR Keihin Tohoku Line, Hanzomon Line",
+        "tex7": "Phone",
+        "tex8": "Representative Director",
+        "tex9": "Zhang Kemu",
+        "tex10": "Established",
+        "tex11": "Business Content",
+        "tex12": "Certification",
+        "tex13": "ISMS certification (ISO27001)"
+      }
+    },
+    "type2": {
+      "title": "Recruitment Information",
+      "info": {
+        "title": "We have a recruitment system for new graduates, second new graduates, and inexperienced IT engineers.",
+        "tex1": "Qualifications",
+        "tex2": "Those who have graduated from a junior college, four-year or six-year university or graduate school, and those who are expected to graduate from a university, graduate school, or vocational training school are eligible to apply (those with work experience can also apply).",
+        "tex3": "Welcome any nationality (Japanese language proficiency is required).",
+        "tex4": "Those who can speak English are highly welcome.",
+        "tex5": "No experience is okay! We believe that a sincere and positive attitude towards work is important.",
+        "tex6": "Desired qualities",
+        "tex7": "Communication and coordination skills with team members and clients.",
+        "tex8": "Have a sense of responsibility and can handle work accurately, seriously, and sincerely.",
+        "tex9": "Able to responsibly advance work while collaborating with others.",
+        "tex10": "Proactively take on new challenges.",
+        "tex11": "Able to adapt flexibly to changes in business.",
+        "tex12": "Treatment",
+        "tex13": "Starting from 180,000 yen (experience is preferred).",
+        "tex14": "※ Regular employment system available.",
+        "tex15": "Welfare benefits",
+        "tex16": "Various social insurance provided.",
+        "tex17": "More than 120 days of annual holidays.",
+        "tex18": "Full two-day rest system (Saturday and Sunday).",
+        "tex19": "How to apply",
+        "tex20": "Email address: info@sea-itsoft.com",
+        "tex21": "Please fill out the resume template and send it to the above address.",
+        "tex22": "Resume template download link",
+        "tex23": "Recruitment positions",
+        "tex24": "Development Engineer",
+        "tex25": "For those with experience, there will be opportunities to take on a variety of tasks such as large clients and cutting-edge projects.",
+        "tex26": "【Skills】",
+        "tex27": "Those with experience in the design and development of various systems (inexperienced individuals are welcome)",
+        "tex28": "Development languages: Java, PHP, VB.Net, PRA, PEGA, C language, etc.",
+        "tex29": "DB: Oracle, SQL Server, PostgreSQL, MySQL",
+        "tex30": "OS: Windows, Linux",
+        "tex31": "Operation and Maintenance Engineer",
+        "tex32": "Responsible for various systems' maintenance, monitoring, and handling of issues during operation.",
+        "tex33": "System operation monitoring",
+        "tex34": "Security measures",
+        "tex35": "Data backup",
+        "tex36": "Recovery of troubles/bugs",
+        "tex37": "Addition of applications",
+        "tex38": "Management of client terminals",
+        "tex39": "Infrastructure Engineer",
+        "tex40": "Experience in system monitoring/operation",
+        "tex41": "Basic and administrator functions of Win and Linux",
+        "tex42": "Knowledge of TR/SW functions at CCNA level",
+        "tex43": "Business knowledge at the JP1 certified engineer level, administrator functions of various consoles",
+        "tex44": "Network/server design, construction, and maintenance",
+        "tex45": "Requirements definition, design, and construction of the personal number system subsystem",
+        "tex46": "Server operation monitoring for cloud services",
+        "tex47": "Design and construction of virtualization environments",
+        "tex48": "Operation and maintenance of network equipment",
+        "tex49": "Introduction, design, and construction of databases, and much more",
+        "tex50": "Introduction, Design, and Construction of Databases, among many others",
+        "tex51": "Monitoring Engineer",
+        "tex52": "Assumes the role of handling various system maintenance, monitoring, and addressing issues during operation.",
+        "tex53": "Operational monitoring of various servers, primary recovery representation",
+        "tex54": "System operation according to procedures, command operations",
+        "tex55": "Communication and reporting with customers and contractors",
+        "tex56": "Compilation of various tasks",
+        "tex57": "Progress management and reporting"
+      }
+    }
+  },
+  "business": {
+    "service_overview": "Service overview",
+
+    "type1_tile": "Investment",
+    "type2_tile": "Residential",
+    "type3_tile": "Medical",
+    "type4_tile": "travel",
+
+    "type1": {
+      "main": {
+        "title1": "With the mission of “increasing, helping, supporting, and connecting landlords,” we provide real estate investment trading support and asset management services to help you build a stable foundation for your life and realize your dreams.",
+        "title2": "With the experience and knowledge of our staff, all of whom are real estate investors, we offer optimal solutions to our clients."
+      },
+      "serviceSectionList": {
+        "item1": {
+          "title": "Increase the number of landlords",
+          "desc": "We provide total support for real estate buying and selling, focusing on single-unit income-generating properties, from individuals investing for the first time to corporate clients considering large-scale investments such as commercial buildings. We also cover tax consulting and risk management related to investment projects.",
+          "tips1": "Total support for real estate investment, from new land purchase to revitalization",
+          "tips2": "Provision of non-public information",
+          "tips3": "Compatible with a variety of properties (condominiums, apartments, commercial buildings, hotels, offices, stores, etc.)",
+          "tips4": "Corporate establishment / account opening / financial planning / support for obtaining bank financing",
+          "tips5": "Insurance consulting such as fire insurance and earthquake insurance",
+          "tips6": "Support for overseas investment projects (Mainland America, Hawaii, Australia, etc.)"
+        },
+        "item2": {
+          "title": "Help the landlord",
+          "desc": "Management and tax consulting for major businesses",
+          "tips1": "Management consulting for inheritance, etc.",
+          "tips2": "Consulting regarding private lodging, simple lodging, and hotel management",
+          "tips3": "Proposals for tax planning including fixed assets and income tax",
+          "tips4": "From repair, reform, renovation, and refinement proposals to after-construction follow-up"
+        },
+        "item3": {
+          "title": "Connect landlords",
+          "desc": "By creating opportunities to connect landlords/property owners and sharing experiences and knowledge, we provide a place to make friends to live a better life and realize your dreams.",
+          "tips1": "Conclusion of various contracts/payment of various expenses/remittance agency",
+          "tips2": "Recruitment of new tenants through advertisements, etc./Occupancy examination based on applicant's income etc.",
+          "tips3": "Creation/renewal of various necessary documents such as rental contract/conclusion of renewal contract/Settlement of money at the time of moving out",
+          "tips4": "Rent collection/Negotiation for revision of rental conditions/Receipt of unreceivables/Complaint handling",
+          "tips5": "Creation and submission of monthly reports",
+          "tips6": "Building inspection/handling small-scale repair work/attending move-out/ordering restoration work"
+        },
+        "item4": {
+          "title": "Support the landlord",
+          "desc": "We provide a variety of support, including strategic maintenance and management in anticipation of building deterioration as the building ages, proactively attracting tenants when the building is vacant, early response to problems that occur on a daily basis, and cash flow analysis management.",
+          "tips1": "Conclusion of various contracts/payment of various expenses/remittance agency",
+          "tips2": "Recruitment of new tenants through advertisements, etc./Occupancy examination based on applicant's income etc.",
+          "tips3": "Creation/renewal of various necessary documents such as rental contract/conclusion of renewal contract/Settlement of money at the time of moving out",
+          "tips4": "Rent collection/Negotiation for revision of rental conditions/Receipt of unreceivables/Complaint handling",
+          "tips5": "Creation and submission of monthly reports",
+          "tips6": "Building inspection/handling small-scale repair work/attending move-out/ordering restoration work"
+        }
+      }
+    },
+
+    "type2_main_title1": "In the canvas of your life, we sketch the dream of a cozy home. With carefully selected properties",
+    "type2_main_title2": "we dedicate ourselves to building warm, secure, and livable houses.",
+    "type2_main_title3": "Join hands with us and let your home become the most beautiful part of your life's journey.",
+
+    "type2_section1_title": "Pay attention to living environment",
+    "type2_section1_sub_title": "Real estate support for choosing a home based on your living situation",
+    "type2_section1_context": "Here, we not only build houses, but also create comfortable and harmonious living. We pay attention to every detail and create a livable space, making your living environment an exquisite reflection of the quality of life. Let’s work together to create a warm, safe and healthy home, making every day a wonderful experience of living.",
+
+    "type2_section1_service_item1": "Comprehensive support for property purchases, from land purchase to freedom to build.",
+    "type2_section1_service_item2": "Provide non-public information",
+    "type2_section1_service_item3": "Compatible with a variety of properties (apartments, apartments, houses, etc.)",
+    "type2_section1_service_item4": "Fire insurance, earthquake insurance and other insurance consultation",
+
+    "type2_section2_title": "Choosing a home that supports your lifestyle",
+    "type2_section2_sub_title": "Personalized Choices, Choose the Ideal Home that Supports Your Lifestyle.",
+    "type2_section2_context": "In the canvas of your life, we sketch the dream of a cozy home. With carefully selected properties, we dedicate ourselves to building warm, secure, and livable houses. Join hands with us and let your home become the most beautiful part of your life's journey.",
+
+    "type2_section2_service_item1": "Inheritance and other consultation",
+    "type2_section2_service_item2": "Tax planning advice including fixed assets and income tax",
+    "type2_section2_service_item3": "From repair, remodeling, and renovation proposals to after-construction follow-up",
+
+    "type3": {
+      "main": {
+        "title1": "We provide an intermediary service that matches customers with Japanese medical institutions for customers in Asia, including China.",
+        "title2": "We also partner with medical and related institutions in Asia to provide support for after-sales follow-up after patients return home."
+      },
+
+      "subtitle": "For customers residing in Asia, we provide a series of services for treatment of diseases, medical checkups, and cosmetic surgery, from not only support during consultations in Japan, but also hearing of needs and follow-up support according to diagnosis results. I will do it.",
+
+      "serviceList": {
+        "item1": {
+          "title": "Premium Medical Care",
+          "description": "We pledge to provide excellent quality medical services, from the initial consultation to the completion of treatment, aiming to meet your needs and exceed your expectations."
+        },
+        "item2": {
+          "title": "Collaboration with Global Medical Experts",
+          "description": "Through close collaboration with global medical experts, we offer diverse medical choices to ensure the diversity of medical plans and provide surprising experiences."
+        },
+        "item3": {
+          "title": "Safe and Reliable Medical Assurance",
+          "description": "Prioritizing your safety and health, we offer comprehensive medical assurance services to ensure you feel secure and fully enjoy the treatment process."
+        },
+        "item4": {
+          "title": "Personalized Medical Experiences",
+          "description": "Working closely with medical experts, we create personalized medical experiences for you, allowing you to discover unique and unforgettable moments during treatment."
+        }
+      },
+      "strengthsList": {
+        "title": "Our Strengths",
+        "item1": {
+          "tex": "Our staff who are qualified as medical interpreters will introduce you to appropriate personnel and medical institutions."
+        },
+        "item2": {
+          "tex": "Total support from Chinese staff who understand Japanese culture"
+        },
+        "item3": {
+          "tex": "Network in Asia including China"
+        }
+      },
+      "btmSection": {
+        "title": "Medical services, we care about your health",
+        "tex1": "We provide high quality medical services and care about your health. Our professional medical team provides meticulous medical care to ensure you have the best treatment experience. Our mission is to protect your health and provide comprehensive medical support so your life is full of vitality and happiness.",
+        "tex2": "Here, the provision of care is even more important than just treatment. We deeply understand that health is the foundation of life. That's why we provide comprehensive medical services to help you live a healthy and happy life. Choosing us is truly choosing care for your health."
+      }
+    },
+
+    "type4": {
+      "main": {
+        "title1": "We provide intermediary services with Japanese travel agencies to clients in Asia, including China.",
+        "title2": "We also work with tourism and related organizations in Asia to support tourists visiting Japan."
+      },
+
+      "subtitle": "We explore unknown and miraculous places and offer our customers unique and unforgettable travel experiences. From enchanting scenery to cultural depth, we'll meet your expectations for your ideal vacation.",
+
+      "serviceList": {
+        "item1": {
+          "title": "Excellent service quality",
+          "description": "We are committed to providing exceptional service quality and aim to meet your requirements and exceed your expectations from booking to trip completion."
+        },
+        "item2": {
+          "title": "global partners",
+          "description": "Working closely with our global partners, we offer a wide range of travel options to ensure your itinerary is full of variety and surprises."
+        },
+        "item3": {
+          "title": "Safe and reliable travel guarantee",
+          "description": "We value your safety and health and provide comprehensive travel protection services so that you can travel with peace of mind."
+        },
+        "item4": {
+          "title": "Unique functional experience",
+          "description": "We combine local characteristics to provide unique experiences, allowing you to discover unique and beautiful moments during your trip."
+        }
+      },
+
+      "strengthsList": {
+        "title": "Our strengths",
+
+        "item1": {
+          "tex": "To accommodate your need for flexibility, we offer friendly booking and cancellation policies to help make your travel plans smoother."
+        },
+        "item2": {
+          "tex": "Our team of professional tour guides know every corner of your destination, providing you with a unique perspective on local culture and history."
+        },
+        "item3": {
+          "tex": "With the customer at the center, we customize unique itineraries based on individual tastes and desires, ensuring every traveler has a personalized journey."
+        }
+      },
+
+      "btmSection": {
+        "title": "Digitization of travel services",
+        "tex1": "We offer highly specialized consultation via online consultation, including staff at the destination store and professional staff on each trip.",
+        "tex2": "Dynamically package JR trains, airplanes, and lodging to improve product selection flexibility. Prices are also flexibly optimized."
+      }
+    }
+  }
+}

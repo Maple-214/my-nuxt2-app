@@ -1,0 +1,142 @@
+{
+  "id": "4359433",
+  "name": "sea",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "577362",
+      "name": "时钟",
+      "font_class": "shizhong",
+      "unicode": "e74f",
+      "unicode_decimal": 59215
+    },
+    {
+      "icon_id": "5387731",
+      "name": "邮件",
+      "font_class": "youjian",
+      "unicode": "eb44",
+      "unicode_decimal": 60228
+    },
+    {
+      "icon_id": "34453243",
+      "name": "phone-fill",
+      "font_class": "phone-fill",
+      "unicode": "e85f",
+      "unicode_decimal": 59487
+    },
+    {
+      "icon_id": "3186908",
+      "name": "握手",
+      "font_class": "woshou",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "18170930",
+      "name": "地球,地理,全球",
+      "font_class": "earth",
+      "unicode": "e9ee",
+      "unicode_decimal": 59886
+    },
+    {
+      "icon_id": "8658083",
+      "name": "Data services",
+      "font_class": "Dataservices",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "3637669",
+      "name": "组织行为绩效",
+      "font_class": "d_performancequery",
+      "unicode": "e6cc",
+      "unicode_decimal": 59084
+    },
+    {
+      "icon_id": "6460245",
+      "name": "梦想计划",
+      "font_class": "mengxiangjihua",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "11834352",
+      "name": "企业愿景",
+      "font_class": "qiyeyuanjing",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "24161272",
+      "name": "人事管理-招聘管理",
+      "font_class": "renshiguanli-zhaopinguanli",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "434756",
+      "name": "youjiantou",
+      "font_class": "youjiantou",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "7239492",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e6f9",
+      "unicode_decimal": 59129
+    },
+    {
+      "icon_id": "562487",
+      "name": "shouye",
+      "font_class": "shouye",
+      "unicode": "e6cd",
+      "unicode_decimal": 59085
+    },
+    {
+      "icon_id": "697499",
+      "name": "工程分析",
+      "font_class": "gongchengfenxi",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "1312053",
+      "name": "旅行",
+      "font_class": "lvhang",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "4807468",
+      "name": "ins 17, healty, hosp",
+      "font_class": "inshealtyhosp",
+      "unicode": "f321",
+      "unicode_decimal": 62241
+    },
+    {
+      "icon_id": "7708028",
+      "name": "下箭头",
+      "font_class": "xiajiantou",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "6664147",
+      "name": "datebox",
+      "font_class": "datebox",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "1424269",
+      "name": "对勾",
+      "font_class": "duigou",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    }
+  ]
+}

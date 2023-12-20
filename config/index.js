@@ -1,0 +1,1 @@
+export const SITE_ROOT_TITLE = '株式会社SEA-Biz・医療仲介・不動産仲介・旅行'

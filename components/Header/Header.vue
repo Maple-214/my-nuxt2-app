@@ -202,9 +202,9 @@
           },
           {
             id: 2,
-            title: 'info@sea-itsoft.com',
+            title: 'info@seabiz.co.jp',
             icon: 'icon-youjian',
-            schema: 'mailto:info@sea-itsoft.com',
+            schema: 'mailto:info@seabiz.co.jp',
           },
           {
             id: 3,
@@ -277,7 +277,6 @@
           }
         }
         const menuList = [
-          this.langMenu || langMenu,
           {
             id: '2',
             title: this.$t('header.nav_menu.item2.title'),
@@ -307,6 +306,11 @@
                 id: '3-4',
                 title: this.$t('header.nav_menu.item3.children.li4'),
                 path: '/business/type4',
+              },
+              {
+                id: '3-5',
+                title: this.$t('header.nav_menu.item3.children.li5'),
+                path: '/business/type5',
               },
             ],
           },
@@ -377,6 +381,7 @@
               },
             ],
           },
+          this.langMenu || langMenu,
         ];
         return menuList;
       },

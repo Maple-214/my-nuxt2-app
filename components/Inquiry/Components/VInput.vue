@@ -25,7 +25,8 @@
       </label>
       <p v-else>
         <label>
-          {{ inputInfo.label }}<br />
+          {{ inputInfo.label }}
+          <br />
           <span class="wpcf7-form-control-wrap">
             <textarea
               cols="40"

@@ -18,12 +18,15 @@
                   aria-label="コンタクトフォーム"
                 >
                   <p>
-                    <label>お問い合わせ区分</label><br />
+                    <label>{{
+                      $t('inquiry.type1.form.checkbox.fruitsTitle')
+                    }}</label
+                    ><br />
                     <span class="wpcf7-form-control-wrap">
                       <span class="wpcf7-form-control wpcf7-checkbox">
                         <span
                           v-for="fruit in fruits"
-                          :key="fruit.value"
+                          :key="fruit.id"
                           class="wpcf7-list-item first"
                         >
                           <label>
@@ -43,8 +46,7 @@
                   </p>
                   <p>
                     <VInput
-                      ref="vs"
-                      v-for="va in vInputList"
+                      v-for="(va,index) in vInputList"
                       :key="va.id"
                       :v-model="formData[va.tag]"
                       :inputInfo="va"
@@ -60,11 +62,10 @@
                               type="checkbox"
                               v-model="privacypolicy"
                               name="privacypolicy"
-                              value="1"
                               aria-invalid="false"
-                            /><span class="wpcf7-list-item-label"
-                              >プライバシーポリシーに同意する</span
-                            ></label
+                            /><span class="wpcf7-list-item-label">{{
+                              $t('inquiry.submit.tex1')
+                            }}</span></label
                           ></span
                         ></span
                       ></span
@@ -75,7 +76,7 @@
                       :disabled="!privacypolicy"
                       class="wpcf7-form-control wpcf7-submit has-spinner"
                       type="submit"
-                      value="送信する"
+                      :value="$t('inquiry.submit.tex2')"
                     /><span class="wpcf7-spinner"></span>
                   </p>
                   <div class="wpcf7-response-fail" v-show="isVerify.failStatus">
@@ -102,13 +103,13 @@
   export default {
     head() {
       return {
-        title: this.$t('contact.type1_tile') + '|' + this.$t('SITE_ROOT_TITLE'),
+        title: this.$t('inquiry.type1.title') + '|' + this.$t('SITE_ROOT_TITLE'),
         meta: [
           {
             hid: 'description',
             name: 'description',
             content:
-              this.$t('contact.type1_tile') + '|' + this.$t('SITE_ROOT_TITLE'),
+              this.$t('inquiry.type1.title') + '|' + this.$t('SITE_ROOT_TITLE'),
           },
         ],
       };
@@ -130,54 +131,7 @@
           message: '',
           selectedFruits: [],
         },
-        fruits: [
-          { label: '不動産について', value: '不動産について' },
-          { label: '医療について', value: '医療について' },
-          { label: '採用について', value: '採用について' },
-          { label: 'その他', value: 'その他' },
-        ],
-        vInputList: [
-          {
-            id: 1,
-            rules: 'isNull',
-            label: '氏名※必須',
-            placeholder: '山田太郎',
-            type: 'text',
-            tag: 'username',
-          },
-          {
-            id: 2,
-            rules: 'isNull',
-            label: '電話番号※必須',
-            placeholder: 'ハイフン無しでご入力ください',
-            type: 'text',
-            tag: 'phone',
-          },
-          {
-            id: 3,
-            rules: 'positive',
-            label: 'メールアドレス※必須',
-            placeholder: 'sample@example.com',
-            type: 'email',
-            tag: 'email',
-          },
-          {
-            id: 4,
-            rules: 'positive',
-            label: 'メールアドレス確認※必須',
-            placeholder: '確認のためもう一度入力してください',
-            type: 'email',
-            tag: 'email_confirm',
-          },
-          {
-            id: 5,
-            rules: 'positive',
-            label: 'メッセージ本文',
-            placeholder: '',
-            type: 'textarea',
-            tag: 'message',
-          },
-        ],
+
         privacypolicy: false,
         isVerify: {
           failStatus: false,
@@ -189,9 +143,87 @@
     computed: {
       meta() {
         return {
-          title: this.$t('contact.type1_tile'),
+          title: this.$t('inquiry.type1.title'),
           path: this.$route.path,
         };
+      },
+      fruits() {
+        return [
+          {
+            id: 1,
+            label: this.$t('inquiry.type1.form.checkbox.fruits.item1.label'),
+            value: this.$t('inquiry.type1.form.checkbox.fruits.item1.value'),
+          },
+          {
+            id: 2,
+            label: this.$t('inquiry.type1.form.checkbox.fruits.item2.label'),
+            value: this.$t('inquiry.type1.form.checkbox.fruits.item2.value'),
+          },
+          {
+            id: 3,
+            label: this.$t('inquiry.type1.form.checkbox.fruits.item3.label'),
+            value: this.$t('inquiry.type1.form.checkbox.fruits.item3.value'),
+          },
+          {
+            id: 4,
+            label: this.$t('inquiry.type1.form.checkbox.fruits.item4.label'),
+            value: this.$t('inquiry.type1.form.checkbox.fruits.item4.value'),
+          },
+        ];
+      },
+      vInputList() {
+        return [
+          {
+            id: 1,
+            rules: 'isNull',
+            label: this.$t('inquiry.type1.form.vInputList.item1.label'),
+            placeholder: this.$t(
+              'inquiry.type1.form.vInputList.item1.placeholder',
+            ),
+            type: 'text',
+            tag: 'username',
+          },
+          {
+            id: 2,
+            rules: 'isNull',
+            label: this.$t('inquiry.type1.form.vInputList.item2.label'),
+            placeholder: this.$t(
+              'inquiry.type1.form.vInputList.item2.placeholder',
+            ),
+            type: 'text',
+            tag: 'phone',
+          },
+          {
+            id: 3,
+            rules: 'positive',
+            label: this.$t('inquiry.type1.form.vInputList.item3.label'),
+            placeholder: this.$t(
+              'inquiry.type1.form.vInputList.item3.placeholder',
+            ),
+            type: 'email',
+            tag: 'email',
+          },
+          {
+            id: 4,
+            rules: 'positive',
+            label: this.$t('inquiry.type1.form.vInputList.item4.label'),
+            placeholder: this.$t(
+              'inquiry.type1.form.vInputList.item4.placeholder',
+            ),
+            type: 'email',
+            tag: 'email_confirm',
+          },
+          {
+            id: 5,
+            rules: 'positive',
+            label: this.$t('inquiry.type1.form.vInputList.item5.label'),
+            placeholder: this.$t(
+              'inquiry.type1.form.vInputList.item5.placeholder',
+            ),
+            type: 'textarea',
+            tag: 'message',
+          },
+        ];
       },
     },
     watch: {

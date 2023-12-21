@@ -7,7 +7,9 @@
       <div class="vc_column-inner">
         <div class="wpb_wrapper">
           <div class="vc_row wpb_row vc_inner vc_row-fluid">
-            <div class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-xs">
+            <div
+              class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-xs"
+            >
               <div class="vc_column-inner hide-on-mobile">
                 <div class="wpb_wrapper"></div>
               </div>
@@ -29,12 +31,14 @@
                     class="kd-section-title col-lg-12 text-center kd-animated fadeIn kd-animate"
                     data-animation-delay="200"
                   >
-                    <h2 class="separator_off">提供サービス</h2>
+                    <h2 class="separator_off">{{ $t('home.sectionTitle') }}</h2>
                   </header>
                 </div>
               </div>
             </div>
-            <div class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-xs">
+            <div
+              class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-xs"
+            >
               <div class="vc_column-inner hide-on-mobile">
                 <div class="wpb_wrapper"></div>
               </div>
@@ -65,16 +69,9 @@
     },
     computed: {},
     watch: {},
-    mounted() {
-      
-    },
-    beforeDestroy() {
-      
-    },
-    methods: {
-      
-      
-    },
+    mounted() {},
+    beforeDestroy() {},
+    methods: {},
   };
 </script>
 <style lang="stylus" scoped>

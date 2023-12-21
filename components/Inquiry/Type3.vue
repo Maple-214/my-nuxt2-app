@@ -19,7 +19,7 @@
                 >
                   <p>
                     <label
-                      >お問い合わせ区分<br />
+                      >{{ $t('inquiry.type3.form.select.optionsTitle') }}<br />
                       <span
                         class="wpcf7-form-control-wrap"
                         data-name="menu-112"
@@ -31,8 +31,8 @@
                           name="menu-112"
                           v-model="formData.selectedInquiry"
                         >
-                          <option value="選択してください">
-                            選択してください
+                          <option value="">
+                            {{ $t('inquiry.type3.form.select.tips') }}
                           </option>
                           <option
                             v-for="options in selectOptions"
@@ -57,7 +57,10 @@
                     />
                   </p>
                   <p>
-                    <label>広告掲載についてチェックされた場合、以下の当てはまるものを選択ください。</label><br />
+                    <label>{{
+                      $t('inquiry.type3.form.checkbox.fruitsTitle')
+                    }}</label
+                    ><br />
                     <span class="wpcf7-form-control-wrap">
                       <span class="wpcf7-form-control wpcf7-checkbox">
                         <span
@@ -91,9 +94,9 @@
                               name="privacypolicy"
                               value="1"
                               aria-invalid="false"
-                            /><span class="wpcf7-list-item-label"
-                              >プライバシーポリシーに同意する</span
-                            ></label
+                            /><span class="wpcf7-list-item-label">{{
+                              $t('inquiry.submit.tex1')
+                            }}</span></label
                           ></span
                         ></span
                       ></span
@@ -104,7 +107,7 @@
                       :disabled="!privacypolicy"
                       class="wpcf7-form-control wpcf7-submit has-spinner"
                       type="submit"
-                      value="送信する"
+                      :value="$t('inquiry.submit.tex2')"
                     /><span class="wpcf7-spinner"></span>
                   </p>
                   <div class="wpcf7-response-fail" v-show="isVerify.failStatus">
@@ -131,13 +134,14 @@
   export default {
     head() {
       return {
-        title: this.$t('contact.type3_tile') + '|' + this.$t('SITE_ROOT_TITLE'),
+        title:
+          this.$t('inquiry.type3.title') + '|' + this.$t('SITE_ROOT_TITLE'),
         meta: [
           {
             hid: 'description',
             name: 'description',
             content:
-              this.$t('contact.type3_tile') + '|' + this.$t('SITE_ROOT_TITLE'),
+              this.$t('inquiry.type3.title') + '|' + this.$t('SITE_ROOT_TITLE'),
           },
         ],
       };
@@ -157,63 +161,9 @@
           email: '',
           email_confirm: '',
           build_name: '',
-          selectedInquiry: '選択してください',
+          selectedInquiry: '',
           selectedFruits: [],
         },
-        selectOptions: [
-          { label: '広告掲載について', value: '広告掲載について' },
-          { label: '内見希望について', value: '内見希望について' },
-        ],
-        fruits: [
-          { label: '自社ホームページ', value: '自社ホームページ' },
-          { label: '楽待', value: '楽待' },
-          { label: 'スーモ', value: 'スーモ' },
-          { label: 'アットホーム', value: 'アットホーム' },
-          { label: 'その他', value: 'その他' },
-        ],
-        vInputList: [
-          {
-            id: 1,
-            rules: 'isNull',
-            label: '氏名※必須',
-            placeholder: '山田太郎',
-            type: 'text',
-            tag: 'username',
-          },
-          {
-            id: 2,
-            rules: 'isNull',
-            label: '電話番号※必須',
-            placeholder: 'ハイフン無しでご入力ください',
-            type: 'text',
-            tag: 'phone',
-          },
-          {
-            id: 3,
-            rules: 'positive',
-            label: 'メールアドレス※必須',
-            placeholder: 'sample@example.com',
-            type: 'email',
-            tag: 'email',
-          },
-          {
-            id: 4,
-            rules: 'positive',
-            label: 'メールアドレス確認※必須',
-            placeholder: '確認のためもう一度入力してください',
-            type: 'email',
-            tag: 'email_confirm',
-          },
-          
-          {
-            id: 5,
-            rules: 'positive',
-            label: '物件名（マンション）を記入して下さい。※必須',
-            placeholder: '',
-            type: 'text',
-            tag: 'build_name',
-          },
-        ],
         privacypolicy: false,
         isVerify: {
           failStatus: false,
@@ -225,9 +175,105 @@
     computed: {
       meta() {
         return {
-          title: this.$t('contact.type3_tile'),
+          title: this.$t('inquiry.type3.title'),
           path: this.$route.path,
         };
+      },
+      selectOptions() {
+        return [
+          {
+            label: this.$t('inquiry.type3.form.select.options.item1.label'),
+            value: this.$t('inquiry.type3.form.select.options.item1.value'),
+          },
+          {
+            label: this.$t('inquiry.type3.form.select.options.item2.label'),
+            value: this.$t('inquiry.type3.form.select.options.item2.value'),
+          },
+        ];
+      },
+      fruits() {
+        return [
+          {
+            id: 1,
+            label: this.$t('inquiry.type3.form.checkbox.fruits.item1.label'),
+            value: this.$t('inquiry.type3.form.checkbox.fruits.item1.value'),
+          },
+          {
+            id: 1,
+            label: this.$t('inquiry.type3.form.checkbox.fruits.item2.label'),
+            value: this.$t('inquiry.type3.form.checkbox.fruits.item2.value'),
+          },
+          {
+            id: 1,
+            label: this.$t('inquiry.type3.form.checkbox.fruits.item3.label'),
+            value: this.$t('inquiry.type3.form.checkbox.fruits.item3.value'),
+          },
+          {
+            id: 1,
+            label: this.$t('inquiry.type3.form.checkbox.fruits.item4.label'),
+            value: this.$t('inquiry.type3.form.checkbox.fruits.item4.value'),
+          },
+          {
+            id: 1,
+            label: this.$t('inquiry.type3.form.checkbox.fruits.item5.label'),
+            value: this.$t('inquiry.type3.form.checkbox.fruits.item5.value'),
+          },
+        ];
+      },
+      vInputList() {
+        return [
+          {
+            id: 1,
+            rules: 'isNull',
+            label: this.$t('inquiry.type3.form.vInputList.item1.label'),
+            placeholder: this.$t(
+              'inquiry.type3.form.vInputList.item1.placeholder',
+            ),
+            type: 'text',
+            tag: 'username',
+          },
+          {
+            id: 2,
+            rules: 'isNull',
+            label: this.$t('inquiry.type3.form.vInputList.item2.label'),
+            placeholder: this.$t(
+              'inquiry.type3.form.vInputList.item2.placeholder',
+            ),
+            type: 'text',
+            tag: 'phone',
+          },
+          {
+            id: 3,
+            rules: 'positive',
+            label: this.$t('inquiry.type3.form.vInputList.item3.label'),
+            placeholder: this.$t(
+              'inquiry.type3.form.vInputList.item3.placeholder',
+            ),
+            type: 'email',
+            tag: 'email',
+          },
+          {
+            id: 4,
+            rules: 'positive',
+            label: this.$t('inquiry.type3.form.vInputList.item4.label'),
+            placeholder: this.$t(
+              'inquiry.type3.form.vInputList.item4.placeholder',
+            ),
+            type: 'email',
+            tag: 'email_confirm',
+          },
+
+          {
+            id: 5,
+            rules: 'positive',
+            label: this.$t('inquiry.type3.form.vInputList.item5.label'),
+            placeholder: this.$t(
+              'inquiry.type3.form.vInputList.item5.placeholder',
+            ),
+            type: 'text',
+            tag: 'build_name',
+          },
+        ];
       },
     },
     watch: {
@@ -238,20 +284,9 @@
       submitForm() {
         this.isVerify.failStatus = false;
         this.isVerify.successStatus = false;
-        const {
-          username,
-          phone,
-          email,
-          email_confirm,
-          build_name,
-        } = this.formData;
-        if (
-          !username ||
-          !phone ||
-          !email ||
-          !email_confirm ||
-          !build_name
-        ) {
+        const { username, phone, email, email_confirm, build_name } =
+          this.formData;
+        if (!username || !phone || !email || !email_confirm || !build_name) {
           this.isVerify.failStatus = true;
           this.isVerify.message = '必須項目に入力してください。';
           return;

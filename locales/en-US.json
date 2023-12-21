@@ -1,6 +1,12 @@
 {
+  "SITE_ROOT_TITLE": "株式会社SEA-Biz・医療仲介・不動産仲介・旅行",
+  "SITE_HOME_TITLE": "株式会社SEA-Biz",
   "home": {
-    "banner_title": "Healthy Hearts, Cozy Homes.",
+    "banner": {
+      "title": "Healthy Hearts, Cozy Homes."
+    },
+    "sectionTitle": "Services provided",
+
     "serviceList": {
       "item1": {
         "title": "Real Estate for Investment"
@@ -82,7 +88,8 @@
           "li1": "Investment Properties",
           "li2": "Residential Properties",
           "li3": "Medical Intermediary",
-          "li4": "Travel"
+          "li4": "Travel",
+          "li5": "IT services"
         }
       },
       "item4": {
@@ -164,14 +171,15 @@
       "supportList": {
         "tex1": "Development, repair, and construction of computer systems",
         "tex2": "Installation, construction, and maintenance of internet servers",
-        "tex3": "Guidance and education on computer systems"
+        "tex3": "Guidance and education on computer systems",
+        "tex4": "Provide real estate agency & travel agency & medical agency services"
       },
       "adress": {
         "title": "Company Details",
         "tex1": "Company Name",
         "tex2": "株式会社SEA-Biz",
         "tex3": "Address",
-        "tex4": "2 Hatoya Building, 3F, Kanda Nishifukudamachi, Chiyoda-ku, Tokyo 101-0037",
+        "tex4": "Lions Mansion Kanagawa Shinmachi Room 2-0102, 5-4 Shinmachi, Kanagawa Ward, Yokohama City, Kanagawa Prefecture",
         "tex5": "4 minutes walk from Shimbashi Station, 5 minutes walk from Kanda Station, 8 minutes walk from Iwamotocho Station, 9 minutes walk from Kodenmacho Station",
         "tex6": "JR Sobu Main Line, JR Yamanote Line, Ginza Line, Toei Shinjuku Line, Hibiya Line, JR Chuo Line, JR Keihin Tohoku Line, Hanzomon Line",
         "tex7": "Phone",
@@ -180,7 +188,8 @@
         "tex10": "Established",
         "tex11": "Business Content",
         "tex12": "Certification",
-        "tex13": "ISMS certification (ISO27001)"
+        "tex13": "ISMS certification (ISO27001)",
+        "tex14": "capital"
       }
     },
     "type2": {
@@ -249,13 +258,9 @@
   },
   "business": {
     "service_overview": "Service overview",
-
-    "type1_tile": "Investment",
-    "type2_tile": "Residential",
-    "type3_tile": "Medical",
-    "type4_tile": "travel",
-
     "type1": {
+      "title": "Investment",
+
       "main": {
         "title1": "With the mission of “increasing, helping, supporting, and connecting landlords,” we provide real estate investment trading support and asset management services to help you build a stable foundation for your life and realize your dreams.",
         "title2": "With the experience and knowledge of our staff, all of whom are real estate investors, we offer optimal solutions to our clients."
@@ -302,28 +307,55 @@
       }
     },
 
-    "type2_main_title1": "In the canvas of your life, we sketch the dream of a cozy home. With carefully selected properties",
-    "type2_main_title2": "we dedicate ourselves to building warm, secure, and livable houses.",
-    "type2_main_title3": "Join hands with us and let your home become the most beautiful part of your life's journey.",
-
-    "type2_section1_title": "Pay attention to living environment",
-    "type2_section1_sub_title": "Real estate support for choosing a home based on your living situation",
-    "type2_section1_context": "Here, we not only build houses, but also create comfortable and harmonious living. We pay attention to every detail and create a livable space, making your living environment an exquisite reflection of the quality of life. Let’s work together to create a warm, safe and healthy home, making every day a wonderful experience of living.",
-
-    "type2_section1_service_item1": "Comprehensive support for property purchases, from land purchase to freedom to build.",
-    "type2_section1_service_item2": "Provide non-public information",
-    "type2_section1_service_item3": "Compatible with a variety of properties (apartments, apartments, houses, etc.)",
-    "type2_section1_service_item4": "Fire insurance, earthquake insurance and other insurance consultation",
-
-    "type2_section2_title": "Choosing a home that supports your lifestyle",
-    "type2_section2_sub_title": "Personalized Choices, Choose the Ideal Home that Supports Your Lifestyle.",
-    "type2_section2_context": "In the canvas of your life, we sketch the dream of a cozy home. With carefully selected properties, we dedicate ourselves to building warm, secure, and livable houses. Join hands with us and let your home become the most beautiful part of your life's journey.",
-
-    "type2_section2_service_item1": "Inheritance and other consultation",
-    "type2_section2_service_item2": "Tax planning advice including fixed assets and income tax",
-    "type2_section2_service_item3": "From repair, remodeling, and renovation proposals to after-construction follow-up",
-
+    "type2": {
+      "title": "Residential real estate",
+      "main": {
+        "title1": "On the canvas of your life, we paint the dream of a comfortable home.",
+        "title2": "With carefully selected real estate, we wholeheartedly build warm, safe, and livable homes.",
+        "title3": "Join hands with us to make your home the most beautiful part of life's journey."
+      },
+      "section1": {
+        "title": "Emphasis on Living Environment",
+        "subTitle": "Real Estate Support for Choosing a Living Environment",
+        "context": "Here, we not only build houses but also create comfort and harmony in the living environment. Paying attention to details, crafting living spaces, and elevating your living environment to a refined expression of lifestyle. Together, let's build warm, safe, and healthy homes, transforming each day into a wonderful living experience.",
+        "service": {
+          "item1": {
+            "tex": "Total support for real estate purchase, from land acquisition to free construction."
+          },
+          "item2": {
+            "tex": "Providing confidential and influential information."
+          },
+          "item3": {
+            "tex": "Adapting to various properties (apartments, flats, detached houses, etc.)."
+          },
+          "item4": {
+            "tex": "Insurance consulting, including fire insurance and earthquake insurance."
+          }
+        }
+      },
+      "section2": {
+        "title": "Choosing Homes that Support Life",
+        "subTitle": "Personalized choices to support your lifestyle, choose the ideal home.",
+        "context": "Choosing a home that supports your lifestyle is the first step in building a better future. We are committed to creating comfortable and livable homes, assisting you in jointly building an ideal life. Home is the best partner for your unique lifestyle.",
+        "service": {
+          "item1": {
+            "tex": "Total support for real estate purchase, from land acquisition to free construction."
+          },
+          "item2": {
+            "tex": "Consulting on inheritance and other matters."
+          },
+          "item3": {
+            "tex": "Proposing tax strategies, including property and income taxes."
+          },
+          "item4": {
+            "tex": "Providing suggestions from repair, renovation to post-construction follow-up."
+          }
+        }
+      }
+    },
     "type3": {
+      "title": "Medical",
+
       "main": {
         "title1": "We provide an intermediary service that matches customers with Japanese medical institutions for customers in Asia, including China.",
         "title2": "We also partner with medical and related institutions in Asia to provide support for after-sales follow-up after patients return home."
@@ -369,6 +401,8 @@
     },
 
     "type4": {
+      "title": "Travel",
+
       "main": {
         "title1": "We provide intermediary services with Japanese travel agencies to clients in Asia, including China.",
         "title2": "We also work with tourism and related organizations in Asia to support tourists visiting Japan."
@@ -414,6 +448,264 @@
         "tex1": "We offer highly specialized consultation via online consultation, including staff at the destination store and professional staff on each trip.",
         "tex2": "Dynamically package JR trains, airplanes, and lodging to improve product selection flexibility. Prices are also flexibly optimized."
       }
+    },
+
+    "type5": {
+      "title": "IT Services",
+
+      "main": {
+        "title1": "Fusing Innovation and Efficiency, Delivering Excellence in IT Services. Our specialized team meets technical requirements and builds a reliable information technology infrastructure.",
+        "title2": "As a strategic partner in digital transformation, we provide custom solutions such as network support, system integration, and data security to support leaps in business growth."
+      },
+      "subtitle": "Strengthening your business with open IT services. Providing secure and scalable solutions, paving the way to success with the latest technology.",
+
+      "serviceList": {
+        "item1": {
+          "title": "Advanced IT Services",
+          "description": "Utilizing the latest technology to deliver outstanding IT services to your business. Enhancing operational efficiency through secure and scalable solutions."
+        },
+        "item2": {
+          "title": "Strategic Partnerships",
+          "description": "Building strategic partnerships and collaborating with global allies. Delivering diverse and innovative solutions to add value to your business."
+        },
+        "item3": {
+          "title": "Secure Data Protection",
+          "description": "Rigorously protecting your data, we provide secure and reliable IT services. Respecting privacy and ensuring digital security in your business."
+        },
+        "item4": {
+          "title": "Customer-Centric Support",
+          "description": "Understanding your needs and providing flexible and prompt customer-centric support. Supporting your success and pursuing reliability and satisfaction."
+        }
+      },
+      "strengthsList": {
+        "title": "Our Strengths",
+        "item1": {
+          "tex": "Adopting friendly and flexible service policies to effectively address your IT needs and provide support."
+        },
+        "item2": {
+          "tex": "Our specialized technical team is well-versed in the latest IT trends and technologies, offering the highest level of technical support to clients."
+        },
+        "item3": {
+          "tex": "Focusing on your business goals and delivering customized IT solutions based on individual needs to maximize your business success."
+        }
+      },
+      "btmSection": {
+        "title": "Innovation in IT Services",
+        "tex1": "Providing advanced consulting services from technical issues to the optimization of IT infrastructure through online consultations.",
+        "tex2": "Delivering IT services flexibly and effectively through the implementation of system integration and cloud solutions, supporting your business."
+      }
+    }
+  },
+  "inquiry": {
+    "submit": {
+      "tex1": "Agree to the Privacy Policy",
+      "tex2": "Submit"
+    },
+    "type1": {
+      "title": "General Inquiries",
+      "form": {
+        "submit": {
+          "tex1": "Agree to Privacy Policy",
+          "tex2": "Submit"
+        },
+
+        "checkbox": {
+          "fruitsTitle": "Inquiry Type",
+          "fruits": {
+            "item1": {
+              "label": "About Real Estate",
+              "value": "About Real Estate"
+            },
+            "item2": {
+              "label": "About Medical",
+              "value": "About Medical"
+            },
+            "item3": {
+              "label": "About Recruitment",
+              "value": "About Recruitment"
+            },
+            "item4": {
+              "label": "Other",
+              "value": "Other"
+            }
+          }
+        },
+        "vInputList": {
+          "item1": {
+            "label": "Name※Required",
+            "placeholder": "Yamada Taro"
+          },
+          "item2": {
+            "label": "Phone Number※Required",
+            "placeholder": "Please enter without hyphens"
+          },
+          "item3": {
+            "label": "Email Address※Required",
+            "placeholder": "sample@example.com"
+          },
+          "item4": {
+            "label": "Confirm Email Address※Required",
+            "placeholder": "Please enter again for confirmation"
+          },
+          "item5": {
+            "label": "Message Body",
+            "placeholder": ""
+          }
+        }
+      }
+    },
+    "type2": {
+      "title": "Inquiry for Real Estate Management and Mediation",
+      "form": {
+        "select": {
+          "optionsTitle": "Inquiry Type",
+          "options": {
+            "item1": {
+              "label": "Leasing Management (Owner)",
+              "value": "Leasing Management (Owner)"
+            },
+            "item2": {
+              "label": "Property Management Inquiry",
+              "value": "Property Management Inquiry"
+            },
+            "item3": {
+              "label": "Inquiry about Purchase Projects",
+              "value": "Inquiry about Purchase Projects"
+            },
+            "item4": {
+              "label": "Leasing Management (Tenant)",
+              "value": "Leasing Management (Tenant)"
+            },
+            "item5": {
+              "label": "Other",
+              "value": "Other"
+            }
+          },
+          "tips": "please select"
+        },
+        "vInputList": {
+          "item1": {
+            "label": "Name* (Required)",
+            "placeholder": "Yamada Taro"
+          },
+          "item2": {
+            "label": "Phone Number* (Required)",
+            "placeholder": "Please input without hyphens"
+          },
+          "item3": {
+            "label": "Email Address* (Required)",
+            "placeholder": "sample@example.com"
+          },
+          "item4": {
+            "label": "Confirm Email Address* (Required)",
+            "placeholder": "To confirm, please enter again"
+          },
+          "item5": {
+            "label": "Please fill in the property plot number* (Required)",
+            "placeholder": ""
+          },
+          "item6": {
+            "label": "Please fill in the property address* (Required)",
+            "placeholder": ""
+          },
+          "item7": {
+            "label": "Please fill in the property name (Apartment)* (Required)",
+            "placeholder": ""
+          },
+          "item8": {
+            "label": "Message Body",
+            "placeholder": ""
+          }
+        }
+      }
+    },
+    "type3": {
+      "title": "For Business Partners",
+      "form": {
+        "submit": {
+          "tex1": "Agree to the Privacy Policy",
+          "tex2": "Submit"
+        },
+        "select": {
+          "optionsTitle": "Inquiry Type",
+          "options": {
+            "item1": {
+              "label": "About Advertising Placement",
+              "value": "About Advertising Placement"
+            },
+            "item2": {
+              "label": "Regarding Property Viewing Requests",
+              "value": "Regarding Property Viewing Requests"
+            }
+          },
+          "tips": "Please select"
+        },
+        "vInputList": {
+          "item1": {
+            "label": "Name* (Required)",
+            "placeholder": "Yamada Taro"
+          },
+          "item2": {
+            "label": "Phone Number* (Required)",
+            "placeholder": "Please input without hyphens"
+          },
+          "item3": {
+            "label": "Email Address* (Required)",
+            "placeholder": "sample@example.com"
+          },
+          "item4": {
+            "label": "Confirm Email Address* (Required)",
+            "placeholder": "To confirm, please enter again"
+          },
+          "item5": {
+            "label": "Please fill in the property name (Apartment)* (Required)",
+            "placeholder": ""
+          }
+        },
+        "checkbox": {
+          "fruitsTitle": "For Advertising Placement, please select applicable options.",
+          "fruits": {
+            "item1": {
+              "label": "Own Website",
+              "value": "Own Website"
+            },
+            "item2": {
+              "label": "Rakumachi",
+              "value": "Rakumachi"
+            },
+            "item3": {
+              "label": "Sumo",
+              "value": "Sumo"
+            },
+            "item4": {
+              "label": "At Home",
+              "value": "At Home"
+            },
+            "item5": {
+              "label": "Other",
+              "value": "Other"
+            }
+          }
+        },
+        "tips": "Please select"
+      }
+    }
+  },
+  "news": {
+    "type1": {
+      "title": "Real Estate Information"
+    },
+    "type2": {
+      "title": "Medical Information"
+    },
+    "type3": {
+      "title": "Travel Information"
+    },
+    "type4": {
+      "title": "Corporate Information"
+    },
+    "detail": {
+      "title": "News Details"
     }
   }
 }

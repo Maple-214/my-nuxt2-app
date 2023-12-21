@@ -51,13 +51,13 @@
     head() {
       return {
         title:
-          this.$t('business.type1_tile') + '|' + this.$t('SITE_ROOT_TITLE'),
+          this.$t('business.type1.title') + '|' + this.$t('SITE_ROOT_TITLE'),
         meta: [
           {
             hid: 'description',
             name: 'description',
             content:
-              this.$t('business.type1_tile') + '|' + this.$t('SITE_ROOT_TITLE'),
+              this.$t('business.type1.title') + '|' + this.$t('SITE_ROOT_TITLE'),
           },
         ],
       };
@@ -72,82 +72,12 @@
     },
     data() {
       return {
-        // serviceSectionList: [
-        //   {
-        //     id: 1,
-        //     title: this.$t('business.type1.serviceSectionList.item1.title'),
-        //     desc: this.$t('business.type1.serviceSectionList.item1.desc'),
-        //     tips: [
-        //       this.$t('business.type1.serviceSectionList.item1.tips1'),
-        //       this.$t('business.type1.serviceSectionList.item1.tips2'),
-        //       this.$t('business.type1.serviceSectionList.item1.tips3'),
-        //       this.$t('business.type1.serviceSectionList.item1.tips4'),
-        //       this.$t('business.type1.serviceSectionList.item1.tips5'),
-        //       this.$t('business.type1.serviceSectionList.item1.tips6'),
-        //     ],
-        //     img: Bg_1,
-        //     position: 'left',
-        //     // hiddenIcon: true,
-        //     hiddenBtn: true,
-        //   },
-        //   {
-        //     id: 2,
-        //     title: this.$t('business.type1.serviceSectionList.item2.title'),
-        //     desc: this.$t('business.type1.serviceSectionList.item2.desc'),
-        //     tips: [
-        //       this.$t('business.type1.serviceSectionList.item2.tips1'),
-        //       this.$t('business.type1.serviceSectionList.item2.tips2'),
-        //       this.$t('business.type1.serviceSectionList.item2.tips3'),
-        //       this.$t('business.type1.serviceSectionList.item2.tips4'),
-        //     ],
-        //     img: Bg_2,
-        //     position: 'right',
-        //     // hiddenIcon: true,
-        //     hiddenBtn: true,
-        //   },
-        //   {
-        //     id: 3,
-        //     title: this.$t('business.type1.serviceSectionList.item3.title'),
-        //     desc: this.$t('business.type1.serviceSectionList.item3.desc'),
-        //     tips: [
-        //       this.$t('business.type1.serviceSectionList.item3.tips1'),
-        //       this.$t('business.type1.serviceSectionList.item3.tips2'),
-        //       this.$t('business.type1.serviceSectionList.item3.tips3'),
-        //       this.$t('business.type1.serviceSectionList.item3.tips4'),
-        //       this.$t('business.type1.serviceSectionList.item3.tips5'),
-        //       this.$t('business.type1.serviceSectionList.item3.tips6'),
-        //     ],
-        //     img: Bg_4,
-        //     position: 'left',
-        //     // hiddenIcon: true,
-        //     hiddenBtn: true,
-        //   },
-        //   {
-        //     id: 4,
-        //     title: this.$t('business.type1.serviceSectionList.item4.title'),
-        //     desc: this.$t('business.type1.serviceSectionList.item4.desc'),
-        //     tips: [
-        //       this.$t('business.type1.serviceSectionList.item4.tips1'),
-        //       this.$t('business.type1.serviceSectionList.item4.tips2'),
-        //       this.$t('business.type1.serviceSectionList.item4.tips3'),
-        //       this.$t('business.type1.serviceSectionList.item4.tips4'),
-        //       this.$t('business.type1.serviceSectionList.item4.tips5'),
-        //       this.$t('business.type1.serviceSectionList.item4.tips6'),
-        //     ],
-        //     img: 'https://img.freepik.com/free-photo/woman-showing-with-one-hand-mini-house-real-state-concept-ai-generative_123827-24098.jpg?size=626&ext=jpg&uid=R116380372&ga=GA1.2.1174743762.1702278788&semt=sph',
-        //     position: 'right',
-        //     // hiddenIcon: true,
-        //     hiddenBtn: true,
-        //     // emailLink: 'https://sea-itsoft.com/wp-content/uploads/2021/11/Sea-rireki.xlsx',
-        //     recruit: false,
-        //   },
-        // ],
       };
     },
     computed: {
       meta() {
         return {
-          title: this.$t('business.type1_tile'),
+          title: this.$t('business.type1.title'),
           path: this.$route.path,
         };
       },

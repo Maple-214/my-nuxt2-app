@@ -73,14 +73,10 @@
                                     decoding="async"
                                     width="500"
                                     height="334"
-                                    src="https://tokyo-happiness.net/wp-content/uploads/2022/04/shutterstock_1895123119-1.jpg"
+                                    :src="item.img"
                                     class="attachment-full"
                                     alt=""
                                     title="African,American,Businessman,Gesturing,During,Discussion,With,Smiling,Multicultural,Business"
-                                    srcset="
-                                      https://tokyo-happiness.net/wp-content/uploads/2022/04/shutterstock_1895123119-1.jpg         500w,
-                                      https://tokyo-happiness.net/wp-content/uploads/2022/04/shutterstock_1895123119-1-300x200.jpg 300w
-                                    "
                                     sizes="(max-width: 500px) 100vw, 500px"
                                   />
                                 </div>
@@ -251,18 +247,25 @@
 </template>
 <script>
   import SecondaryBanner from '../SecondaryBanner/SecondaryBanner.vue';
+  import business_type3_01 from '~/assets/images/business/business_type3_01.jpg';
+  import business_type3_02 from '~/assets/images/business/business_type3_02.jpg';
+  import business_type3_03 from '~/assets/images/business/business_type3_03.jpg';
+  import business_type3_04 from '~/assets/images/business/business_type3_04.jpg';
+
 
   export default {
     head() {
       return {
         title:
-          this.$t('business.type3_tile') + '|' + this.$t('SITE_ROOT_TITLE'),
+          this.$t('business.type3.title') + '|' + this.$t('SITE_ROOT_TITLE'),
         meta: [
           {
             hid: 'description',
             name: 'description',
             content:
-              this.$t('business.type3_tile') + '|' + this.$t('SITE_ROOT_TITLE'),
+              this.$t('business.type3.title') +
+              '|' +
+              this.$t('SITE_ROOT_TITLE'),
           },
         ],
       };
@@ -274,12 +277,17 @@
       SecondaryBanner,
     },
     data() {
-      return {};
+      return {
+        business_type3_01,
+        business_type3_02,
+        business_type3_03,
+        business_type3_04
+      };
     },
     computed: {
       meta() {
         return {
-          title: this.$t('business.type3_tile'),
+          title: this.$t('business.type3.title'),
           path: this.$route.path,
         };
       },
@@ -291,6 +299,7 @@
             description: this.$t(
               'business.type3.serviceList.item1.description',
             ),
+            img:business_type3_01
           },
           {
             id: 2,
@@ -298,6 +307,7 @@
             description: this.$t(
               'business.type3.serviceList.item2.description',
             ),
+            img:business_type3_02
           },
           {
             id: 3,
@@ -305,11 +315,15 @@
             description: this.$t(
               'business.type3.serviceList.item3.description',
             ),
+            img:business_type3_03
           },
           {
             id: 4,
             title: this.$t('business.type3.serviceList.item4.title'),
-            description: this.$t('business.type3.serviceList.item4.description'),
+            description: this.$t(
+              'business.type3.serviceList.item4.description',
+            ),
+            img:business_type3_04
           },
         ];
       },

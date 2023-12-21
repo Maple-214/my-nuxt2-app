@@ -23,13 +23,13 @@
   export default {
     head() {
       return {
-        title: this.$t('news.detail_title') + '|' + this.$t('SITE_ROOT_TITLE'),
+        title: this.$t('news.detail.title') + '|' + this.$t('SITE_ROOT_TITLE'),
         meta: [
           {
             hid: 'description',
             name: 'description',
             content:
-              this.$t('news.detail_title') + '|' + this.$t('SITE_ROOT_TITLE'),
+              this.$t('news.detail.title') + '|' + this.$t('SITE_ROOT_TITLE'),
           },
         ],
       };
@@ -49,7 +49,7 @@
     computed: {
       meta() {
         return {
-          title: this.$t('news.detail_title'),
+          title: this.$t('news.detail.title'),
           path: this.$route.path,
         };
       },

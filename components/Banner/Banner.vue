@@ -34,7 +34,7 @@
                     data-animation-delay="200"
                   >
                     <h1 class="separator_off" style="color: #ffffff">
-                      心は健康、家は温かい。
+                      {{ $t('home.banner.title') }}
                     </h1>
                   </header>
                   <div class="vc_empty_space" style="height: 100px">

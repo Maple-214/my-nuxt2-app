@@ -25,13 +25,13 @@
                               <div class="wpb_text_column wpb_content_element">
                                 <div class="wpb_wrapper">
                                   <h4 style="text-align: left">
-                                    {{ $t('business.type2_main_title1') }}
+                                    {{ $t('business.type2.main.title1') }}
                                   </h4>
                                   <h4 style="text-align: left">
-                                    {{ $t('business.type2_main_title2') }}
+                                    {{ $t('business.type2.main.title2') }}
                                   </h4>
                                   <h4 style="text-align: left">
-                                    {{ $t('business.type2_main_title3') }}
+                                    {{ $t('business.type2.main.title3') }}
                                   </h4>
                                 </div>
                               </div>
@@ -93,19 +93,19 @@
                                 class="kd-section-title col-lg-12 text-left solid-line sep-border-width-2"
                               >
                                 <h2 class="separator_on">
-                                  {{ $t('business.type2_section1_title') }}
+                                  {{ $t('business.type2.section1.title') }}
                                 </h2>
                                 <div class="kd-separator below_title">
                                   <div class="kd-separator-line"></div>
                                 </div>
                                 <h6 class="subtitle">
-                                  {{ $t('business.type2_section1_sub_title') }}
+                                  {{ $t('business.type2.section1.subTitle') }}
                                 </h6>
                               </header>
                               <div class="wpb_text_column wpb_content_element">
                                 <div class="wpb_wrapper">
                                   <p>
-                                    {{ $t('business.type2_section1_context') }}
+                                    {{ $t('business.type2.section1.context') }}
                                   </p>
                                 </div>
                               </div>
@@ -119,28 +119,28 @@
                                     <li class="iconfont icon-duigou">
                                       {{
                                         $t(
-                                          'business.type2_section1_service_item1',
+                                          'business.type2.section1.service.item1.tex',
                                         )
                                       }}
                                     </li>
                                     <li class="iconfont icon-duigou">
                                       {{
                                         $t(
-                                          'business.type2_section1_service_item2',
+                                          'business.type2.section1.service.item2.tex',
                                         )
                                       }}
                                     </li>
                                     <li class="iconfont icon-duigou">
                                       {{
                                         $t(
-                                          'business.type2_section1_service_item3',
+                                          'business.type2.section1.service.item3.tex',
                                         )
                                       }}
                                     </li>
                                     <li class="iconfont icon-duigou">
                                       {{
                                         $t(
-                                          'business.type2_section1_service_item4',
+                                          'business.type2.section1.service.item4.tex',
                                         )
                                       }}
                                     </li>
@@ -191,20 +191,20 @@
                                 class="kd-section-title col-lg-12 text-left solid-line sep-border-width-2"
                               >
                                 <h2 class="separator_on">
-                                  {{ $t('business.type2_section2_title') }}
+                                  {{ $t('business.type2.section2.title') }}
                                 </h2>
                                 <div class="kd-separator below_title">
                                   <div class="kd-separator-line"></div>
                                 </div>
                                 <h6 class="subtitle">
-                                  {{ $t('business.type2_section2_sub_title') }}
+                                  {{ $t('business.type2.section2.subTitle') }}
                                 </h6>
                               </header>
                               <div class="wpb_text_column wpb_content_element">
                                 <div class="wpb_wrapper">
                                   <p>
                                     <strong>{{
-                                      $t('business.type2_section2_context')
+                                      $t('business.type2.section2.context')
                                     }}</strong>
                                   </p>
                                 </div>
@@ -219,21 +219,21 @@
                                     <li class="iconfont icon-duigou">
                                       {{
                                         $t(
-                                          'business.type2_section2_service_item1',
+                                          'business.type2.section2.service.item1.tex',
                                         )
                                       }}
                                     </li>
                                     <li class="iconfont icon-duigou">
                                       {{
                                         $t(
-                                          'business.type2_section2_service_item2',
+                                          'business.type2.section2.service.item2.tex',
                                         )
                                       }}
                                     </li>
                                     <li class="iconfont icon-duigou">
                                       {{
                                         $t(
-                                          'business.type2_section2_service_item3',
+                                          'business.type2.section2.service.item3.tex',
                                         )
                                       }}
                                     </li>
@@ -292,13 +292,13 @@
     head() {
       return {
         title:
-          this.$t('business.type2_tile') + '|' + this.$t('SITE_ROOT_TITLE'),
+          this.$t('business.type2.title') + '|' + this.$t('SITE_ROOT_TITLE'),
         meta: [
           {
             hid: 'description',
             name: 'description',
             content:
-              this.$t('business.type2_tile') + '|' + this.$t('SITE_ROOT_TITLE'),
+              this.$t('business.type2.title') + '|' + this.$t('SITE_ROOT_TITLE'),
           },
         ],
       };
@@ -316,7 +316,7 @@
     computed: {
       meta() {
         return {
-          title: this.$t('business.type2_tile'),
+          title: this.$t('business.type2.title'),
           path: this.$route.path,
         };
       },

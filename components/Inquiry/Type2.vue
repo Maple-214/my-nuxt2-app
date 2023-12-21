@@ -19,7 +19,7 @@
                 >
                   <p>
                     <label
-                      >お問い合わせ区分<br />
+                      >{{ $t('inquiry.type2.form.select.optionsTitle') }}<br />
                       <span
                         class="wpcf7-form-control-wrap"
                         data-name="menu-112"
@@ -31,8 +31,8 @@
                           name="menu-112"
                           v-model="formData.selectedInquiry"
                         >
-                          <option value="選択してください">
-                            選択してください
+                          <option value="">
+                            {{ $t('inquiry.type2.form.select.tips') }}
                           </option>
                           <option
                             v-for="options in selectOptions"
@@ -67,9 +67,9 @@
                               name="privacypolicy"
                               value="1"
                               aria-invalid="false"
-                            /><span class="wpcf7-list-item-label"
-                              >プライバシーポリシーに同意する</span
-                            ></label
+                            /><span class="wpcf7-list-item-label">{{
+                              $t('inquiry.submit.tex1')
+                            }}</span></label
                           ></span
                         ></span
                       ></span
@@ -80,7 +80,7 @@
                       :disabled="!privacypolicy"
                       class="wpcf7-form-control wpcf7-submit has-spinner"
                       type="submit"
-                      value="送信する"
+                      :value="$t('inquiry.submit.tex2')"
                     /><span class="wpcf7-spinner"></span>
                   </p>
                   <div class="wpcf7-response-fail" v-show="isVerify.failStatus">
@@ -107,13 +107,14 @@
   export default {
     head() {
       return {
-        title: this.$t('contact.type2_tile') + '|' + this.$t('SITE_ROOT_TITLE'),
+        title:
+          this.$t('inquiry.type2.title') + '|' + this.$t('SITE_ROOT_TITLE'),
         meta: [
           {
             hid: 'description',
             name: 'description',
             content:
-              this.$t('contact.type2_tile') + '|' + this.$t('SITE_ROOT_TITLE'),
+              this.$t('inquiry.type2.title') + '|' + this.$t('SITE_ROOT_TITLE'),
           },
         ],
       };
@@ -136,82 +137,8 @@
           build_id: '',
           build_adress: '',
           build_name: '',
-          selectedInquiry: '選択してください',
+          selectedInquiry: '',
         },
-        selectOptions: [
-          { label: '賃貸管理（オーナー様）', value: '賃貸管理（オーナー様）' },
-          { label: '物件管理の問合せ', value: '物件管理の問合せ' },
-          { label: '売買案件のご紹介', value: '売買案件のご紹介' },
-          { label: '買取案件について', value: '買取案件について' },
-          { label: '賃貸管理（入居者）', value: '賃貸管理（入居者）' },
-          { label: 'その他', value: 'その他' },
-        ],
-        vInputList: [
-          {
-            id: 1,
-            rules: 'isNull',
-            label: '氏名※必須',
-            placeholder: '山田太郎',
-            type: 'text',
-            tag: 'username',
-          },
-          {
-            id: 2,
-            rules: 'isNull',
-            label: '電話番号※必須',
-            placeholder: 'ハイフン無しでご入力ください',
-            type: 'text',
-            tag: 'phone',
-          },
-          {
-            id: 3,
-            rules: 'positive',
-            label: 'メールアドレス※必須',
-            placeholder: 'sample@example.com',
-            type: 'email',
-            tag: 'email',
-          },
-          {
-            id: 4,
-            rules: 'positive',
-            label: 'メールアドレス確認※必須',
-            placeholder: '確認のためもう一度入力してください',
-            type: 'email',
-            tag: 'email_confirm',
-          },
-          {
-            id: 5,
-            rules: 'positive',
-            label: '物件地番を記入して下さい。※必須',
-            placeholder: '',
-            type: 'text',
-            tag: 'build_id',
-          },
-          {
-            id: 6,
-            rules: 'positive',
-            label: '物件住所を記入して下さい。※必須',
-            placeholder: '',
-            type: 'text',
-            tag: 'build_adress',
-          },
-          {
-            id: 7,
-            rules: 'positive',
-            label: '物件名（マンション）を記入して下さい。※必須',
-            placeholder: '',
-            type: 'text',
-            tag: 'build_name',
-          },
-          {
-            id: 8,
-            rules: 'positive',
-            label: 'メッセージ本文',
-            placeholder: '',
-            type: 'textarea',
-            tag: 'message',
-          },
-        ],
         privacypolicy: false,
         isVerify: {
           failStatus: false,
@@ -223,9 +150,117 @@
     computed: {
       meta() {
         return {
-          title: this.$t('contact.type2_tile'),
+          title: this.$t('inquiry.type2.title'),
           path: this.$route.path,
         };
+      },
+      selectOptions() {
+        return [
+          {
+            label: this.$t('inquiry.type2.form.select.options.item1.label'),
+            value: this.$t('inquiry.type2.form.select.options.item1.value'),
+          },
+          {
+            label: this.$t('inquiry.type2.form.select.options.item2.label'),
+            value: this.$t('inquiry.type2.form.select.options.item2.value'),
+          },
+          {
+            label: this.$t('inquiry.type2.form.select.options.item3.label'),
+            value: this.$t('inquiry.type2.form.select.options.item3.value'),
+          },
+          {
+            label: this.$t('inquiry.type2.form.select.options.item4.label'),
+            value: this.$t('inquiry.type2.form.select.options.item4.value'),
+          },
+          {
+            label: this.$t('inquiry.type2.form.select.options.item5.label'),
+            value: this.$t('inquiry.type2.form.select.options.item5.value'),
+          },
+        ];
+      },
+      vInputList() {
+        return [
+          {
+            id: 1,
+            rules: 'isNull',
+            label: this.$t('inquiry.type2.form.vInputList.item1.label'),
+            placeholder: this.$t(
+              'inquiry.type2.form.vInputList.item1.placeholder',
+            ),
+            type: 'text',
+            tag: 'username',
+          },
+          {
+            id: 2,
+            rules: 'isNull',
+            label: this.$t('inquiry.type2.form.vInputList.item2.label'),
+            placeholder: this.$t(
+              'inquiry.type2.form.vInputList.item2.placeholder',
+            ),
+            type: 'text',
+            tag: 'phone',
+          },
+          {
+            id: 3,
+            rules: 'positive',
+            label: this.$t('inquiry.type2.form.vInputList.item3.label'),
+            placeholder: this.$t(
+              'inquiry.type2.form.vInputList.item3.placeholder',
+            ),
+            type: 'email',
+            tag: 'email',
+          },
+          {
+            id: 4,
+            rules: 'positive',
+            label: this.$t('inquiry.type2.form.vInputList.item4.label'),
+            placeholder: this.$t(
+              'inquiry.type2.form.vInputList.item4.placeholder',
+            ),
+            type: 'email',
+            tag: 'email_confirm',
+          },
+          {
+            id: 5,
+            rules: 'positive',
+            label: this.$t('inquiry.type2.form.vInputList.item5.label'),
+            placeholder: this.$t(
+              'inquiry.type2.form.vInputList.item5.placeholder',
+            ),
+            type: 'text',
+            tag: 'build_id',
+          },
+          {
+            id: 6,
+            rules: 'positive',
+            label: this.$t('inquiry.type2.form.vInputList.item6.label'),
+            placeholder: this.$t(
+              'inquiry.type2.form.vInputList.item6.placeholder',
+            ),
+            type: 'text',
+            tag: 'build_adress',
+          },
+          {
+            id: 7,
+            rules: 'positive',
+            label: this.$t('inquiry.type2.form.vInputList.item7.label'),
+            placeholder: this.$t(
+              'inquiry.type2.form.vInputList.item7.placeholder',
+            ),
+            type: 'text',
+            tag: 'build_name',
+          },
+          {
+            id: 8,
+            rules: 'positive',
+            label: this.$t('inquiry.type2.form.vInputList.item7.label'),
+            placeholder: this.$t(
+              'inquiry.type2.form.vInputList.item7.placeholder',
+            ),
+            type: 'textarea',
+            tag: 'message',
+          },
+        ];
       },
     },
     watch: {

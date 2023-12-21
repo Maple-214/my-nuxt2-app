@@ -10,7 +10,7 @@
                   rel="noreferrer noopener"
                   target="_blank"
                   href="https://www.facebook.com/tokyohappiness"
-                  >
+                >
                   <!-- <i class="fab fa-facebook-square" title=""></i> -->
                 </a>
               </li>
@@ -86,12 +86,12 @@
           </div>
           <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 forth-widget-area">
             <div id="text-3" class="footer_widget widget widget_text">
-              <h5 class="widget-title"><span>東京ハピネス</span></h5>
+              <h5 class="widget-title"><span>{{ $t('SITE_HOME_TITLE') }}</span></h5>
               <div class="textwidget">
                 <p>
                   TEL：03-6206-8815<br />
                   FAX：03-6206-8815<br />
-                  Mail：info@sea-itsoft.com
+                  Mail：info@seabiz.co.jp
                 </p>
               </div>
             </div>
@@ -101,7 +101,7 @@
     </div>
     <div class="lower-footer">
       <div class="container">
-        <span> Copyright © SEA Inc.  2021 All Rights Reserved.</span>
+        <span> Copyright © SEA Inc. 2021 All Rights Reserved.</span>
       </div>
     </div>
   </footer>
@@ -117,51 +117,56 @@
         ServiceList: [
           {
             id: 1,
-            title: '投資用の不動産',
+            title: this.$t('header.nav_menu.item3.children.li1'),
             path: '/business/type1',
           },
           {
             id: 2,
-            title: '住まいの不動産',
+            title: this.$t('header.nav_menu.item3.children.li2'),
             path: '/business/type2',
           },
           {
             id: 3,
-            title: '医療仲介',
+            title: this.$t('header.nav_menu.item3.children.li3'),
             path: '/business/type3',
           },
           {
             id: 4,
-            title: '旅行',
+            title: this.$t('header.nav_menu.item3.children.li4'),
             path: '/business/type4',
+          },
+          {
+            id: 5,
+            title: this.$t('header.nav_menu.item3.children.li5'),
+            path: '/business/type5',
           },
         ],
         ContactList: [
           {
             id: 1,
-            title: 'お問い合わせ',
+            title: this.$t('header.nav_menu.item6.children.li1'),
             path: '/inquiry/type1',
           },
           {
             id: 2,
-            title: '不動産管理・仲介のお問合せ',
+            title: this.$t('header.nav_menu.item6.children.li2'),
             path: '/inquiry/type2',
           },
           {
             id: 3,
-            title: '業者用お問い合わせ',
+            title: this.$t('header.nav_menu.item6.children.li3'),
             path: '/inquiry/type3',
           },
         ],
         AboutList: [
           {
             id: 1,
-            title: '会社概要',
+            title:  this.$t('header.nav_menu.item4.children.li1'),
             path: '/about/type1',
           },
           {
             id: 1,
-            title: '採用情報',
+            title: this.$t('header.nav_menu.item4.children.li2'),
             path: '/about/type2',
           },
         ],

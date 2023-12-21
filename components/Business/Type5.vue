@@ -13,10 +13,10 @@
                       <div class="wpb_text_column wpb_content_element">
                         <div class="wpb_wrapper">
                           <h4 style="text-align: left">
-                            {{ $t('business.type4.main.title1') }}
+                            {{ $t('business.type5.main.title1') }}
                           </h4>
                           <h4 style="text-align: left">
-                            {{ $t('business.type4.main.title2') }}
+                            {{ $t('business.type5.main.title2') }}
                           </h4>
                         </div>
                       </div>
@@ -49,7 +49,7 @@
                                   <div class="kd-separator-line"></div>
                                 </div>
                                 <h6 class="subtitle">
-                                  {{ $t('business.type4.subtitle') }}
+                                  {{ $t('business.type5.subtitle') }}
                                 </h6>
                               </header>
                             </div>
@@ -110,7 +110,7 @@
                         data-animation-delay="200"
                       >
                         <h2 class="separator_on">
-                          {{ $t('business.type4.strengthsList.title') }}
+                          {{ $t('business.type5.strengthsList.title') }}
                         </h2>
                         <div class="kd-separator below_title">
                           <div class="kd-separator-line"></div>
@@ -204,7 +204,7 @@
                                 data-animation-delay="200"
                               >
                                 <h2 class="separator_on">
-                                  {{ $t('business.type4.btmSection.title') }}
+                                  {{ $t('business.type5.btmSection.title') }}
                                 </h2>
                                 <div class="kd-separator below_title">
                                   <div class="kd-separator-line"></div>
@@ -213,10 +213,10 @@
                               <div class="wpb_text_column wpb_content_element">
                                 <div class="wpb_wrapper">
                                   <p>
-                                    {{ $t('business.type4.btmSection.tex1') }}
+                                    {{ $t('business.type5.btmSection.tex1') }}
                                   </p>
                                   <p>
-                                    {{ $t('business.type4.btmSection.tex2') }}
+                                    {{ $t('business.type5.btmSection.tex2') }}
                                   </p>
                                 </div>
                               </div>
@@ -246,29 +246,29 @@
 </template>
 <script>
   import SecondaryBanner from '../SecondaryBanner/SecondaryBanner.vue';
-  import business_type4_01 from '~/assets/images/business/business_type4_01.jpg';
-  import business_type4_02 from '~/assets/images/business/business_type4_02.jpg';
-  import business_type4_03 from '~/assets/images/business/business_type4_03.jpg';
-  import business_type4_04 from '~/assets/images/business/business_type4_04.jpg';
+  import business_type5_01 from '~/assets/images/business/business_type5_01.jpg';
+  import business_type5_02 from '~/assets/images/business/business_type5_02.jpg';
+  import business_type5_03 from '~/assets/images/business/business_type5_03.jpg';
+  import business_type5_04 from '~/assets/images/business/business_type5_04.jpg';
+
+
 
   export default {
     head() {
       return {
         title:
-          this.$t('business.type4.title') + '|' + this.$t('SITE_ROOT_TITLE'),
+          this.$t('business.type5.title') + '|' + this.$t('SITE_ROOT_TITLE'),
         meta: [
           {
             hid: 'description',
             name: 'description',
             content:
-              this.$t('business.type4.title') +
-              '|' +
-              this.$t('SITE_ROOT_TITLE'),
+              this.$t('business.type5.title') + '|' + this.$t('SITE_ROOT_TITLE'),
           },
         ],
       };
     },
-    name: 'ComponentsAboutType4',
+    name: 'ComponentsAboutType5',
     components: {},
     mixins: [],
     props: {
@@ -276,16 +276,17 @@
     },
     data() {
       return {
-        business_type4_01,
-        business_type4_02,
-        business_type4_03,
-        business_type4_04,
+        business_type5_01,
+        business_type5_02,
+        business_type5_03,
+        business_type5_04,
+
       };
     },
     computed: {
       meta() {
         return {
-          title: this.$t('business.type4.title'),
+          title: this.$t('business.type5.title'),
           path: this.$route.path,
         };
       },
@@ -293,35 +294,39 @@
         return [
           {
             id: 1,
-            title: this.$t('business.type4.serviceList.item1.title'),
+            title: this.$t('business.type5.serviceList.item1.title'),
+
             description: this.$t(
-              'business.type4.serviceList.item1.description',
+              'business.type5.serviceList.item1.description',
             ),
-            img: business_type4_01,
+            img: business_type5_01,
           },
           {
             id: 2,
-            title: this.$t('business.type4.serviceList.item2.title'),
+            title: this.$t('business.type5.serviceList.item2.title'),
             description: this.$t(
-              'business.type4.serviceList.item2.description',
+              'business.type5.serviceList.item2.description',
             ),
-            img: business_type4_02,
+            img: business_type5_02,
+
           },
           {
             id: 3,
-            title: this.$t('business.type4.serviceList.item3.title'),
+            title: this.$t('business.type5.serviceList.item3.title'),
             description: this.$t(
-              'business.type4.serviceList.item3.description',
+              'business.type5.serviceList.item3.description',
             ),
-            img: business_type4_03,
+            img: business_type5_03,
+
           },
           {
             id: 4,
-            title: this.$t('business.type4.serviceList.item4.title'),
+            title: this.$t('business.type5.serviceList.item4.title'),
             description: this.$t(
-              'business.type4.serviceList.item4.description',
+              'business.type5.serviceList.item4.description',
             ),
-            img: business_type4_04,
+            img: business_type5_04,
+
           },
         ];
       },
@@ -329,17 +334,17 @@
         return [
           {
             id: 1,
-            tex: this.$t('business.type4.strengthsList.item1.tex'),
+            tex: this.$t('business.type5.strengthsList.item1.tex'),
             icon: 'icon-woshou',
           },
           {
             id: 2,
-            tex: this.$t('business.type4.strengthsList.item2.tex'),
+            tex: this.$t('business.type5.strengthsList.item2.tex'),
             icon: 'icon-mengxiangjihua',
           },
           {
             id: 3,
-            tex: this.$t('business.type4.strengthsList.item3.tex'),
+            tex: this.$t('business.type5.strengthsList.item3.tex'),
             icon: 'icon-earth',
           },
         ];
@@ -459,7 +464,7 @@
   .vc_custom_1650505823182
     padding-top: 200px !important
     padding-bottom: 200px !important
-    background-image: url(https://img.freepik.com/free-photo/view-3d-airplane-with-travel-destination-landscape_23-2151022185.jpg?ga=GA1.1.1174743762.1702278788&semt=ais_ai_generated) !important
+    background-image: url('~/assets/images/business/business_05.jpg') !important
     background-position: center !important
     background-repeat: no-repeat !important
     background-size: cover !important

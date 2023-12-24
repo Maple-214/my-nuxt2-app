@@ -20,12 +20,12 @@
                     <tbody>
                       <tr>
                         <th>{{ $t('about.type1.adress.tex1') }}</th>
-                        <td>{{ $t('about.type1.adress.tex2') }}</td>
+                        <td>{{ observerCompanyDetails.companyName }}</td>
                       </tr>
                       <tr>
                         <th>{{ $t('about.type1.adress.tex3') }}</th>
                         <td>
-                          {{ $t('about.type1.adress.tex4') }}
+                          {{ observerCompanyDetails.location }}
                           <p></p>
                           <figure>
                             <iframe
@@ -49,11 +49,11 @@
                       </tr>
                       <tr>
                         <th>{{ $t('about.type1.adress.tex7') }}</th>
-                        <td>申請中</td>
+                        <td>{{ observerCompanyDetails.telephone }}</td>
                       </tr>
                       <tr>
                         <th>E-mail</th>
-                        <td>info@seabiz.co.jp</td>
+                        <td>{{ observerCompanyDetails.email }}</td>
                       </tr>
                       <tr>
                         <th>{{ $t('about.type1.adress.tex14') }}</th>
@@ -61,18 +61,20 @@
                       </tr>
                       <tr>
                         <th>{{ $t('about.type1.adress.tex8') }}</th>
-                        <td>{{ $t('about.type1.adress.tex9') }}</td>
+                        <td>{{ observerCompanyDetails.representativeDirector }}</td>
                       </tr>
                       <tr>
                         <th>{{ $t('about.type1.adress.tex10') }}</th>
-                        <td>2024年1月9日</td>
+                        <td>{{ observerCompanyDetails.setUp }}</td>
                       </tr>
                       <tr>
                         <th>{{ $t('about.type1.adress.tex11') }}</th>
                         <td>
                           <ul>
                             <li
-                              v-for="(item, index) in supportList"
+                              v-for="(
+                                item, index
+                              ) in observerCompanyDetails.businessContent"
                               :key="index"
                               class="iconfont icon-duigou"
                             >
@@ -122,8 +124,10 @@
     components: {},
     mixins: [],
     props: {
-      SecondaryBanner,
-      SectionMain,
+      observerCompanyDetails: {
+        type: Object,
+        required: true,
+      },
     },
     data() {
       return {};

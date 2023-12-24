@@ -7,7 +7,7 @@
       <div class="container">
         <div class="topbar-left-content">
           <div class="topbar-contact">
-            <span v-for="i in infoList" :key="i.id" class="topbar-phone">
+            <span v-for="i in topNav" :key="i.id" class="topbar-phone">
               <a :href="i.schema">
                 <i class="iconfont primary-color" :class="i.icon"></i>
                 <span>{{ i.title }}</span>
@@ -43,13 +43,13 @@
               class="fixed-logo"
               :src="logoImg"
               width="250"
-              alt="東京ハピネス"
+              alt=""
             />
             <img
               class="nav-logo"
               :src="logoImg"
               width="250"
-              alt="東京ハピネス"
+              alt=""
             />
           </a>
         </div>
@@ -180,6 +180,8 @@
   import zhIcon from '~/assets/images/icons/zh_icon.png';
   import jaIcon from '~/assets/images/icons/ja_icon.png';
   import enIcon from '~/assets/images/icons/en_icon.png';
+  import topNav from '~/mock/header/top-nav.json'
+
 
   export default {
     name: 'Header',
@@ -190,29 +192,30 @@
       return {
         didScroll: false,
         changeHeaderOn: 50,
+        topNav,
         isMobile: false,
         logoImg,
         langMenu: {},
-        infoList: [
-          {
-            id: 1,
-            title: '03-6206-8815',
-            icon: 'icon-phone-fill',
-            schema: 'tel:03-6206-8815',
-          },
-          {
-            id: 2,
-            title: 'info@seabiz.co.jp',
-            icon: 'icon-youjian',
-            schema: 'mailto:info@seabiz.co.jp',
-          },
-          {
-            id: 3,
-            title: '10:00-18:00',
-            icon: 'icon-shizhong',
-            schema: '',
-          },
-        ],
+        // infoList: [
+        //   {
+        //     id: 1,
+        //     title: '03-6206-8815',
+        //     icon: 'icon-phone-fill',
+        //     schema: 'tel:03-6206-8815',
+        //   },
+        //   {
+        //     id: 2,
+        //     title: 'info@seabiz.co.jp',
+        //     icon: 'icon-youjian',
+        //     schema: 'mailto:info@seabiz.co.jp',
+        //   },
+        //   {
+        //     id: 3,
+        //     title: '10:00-18:00',
+        //     icon: 'icon-shizhong',
+        //     schema: '',
+        //   },
+        // ],
       };
     },
     computed: {
@@ -417,6 +420,7 @@
     },
     watch: {},
     mounted() {
+      console.log({topNav});
       this.checkScreenWidth();
       // 在组件挂载时添加窗口宽度变化的监听器
       window.addEventListener('resize', this.handleResize);
@@ -542,6 +546,7 @@
           $('html').attr('lang', lang);
           this.initMenuList();
         }
+        window.location.reload()
       },
       initMenuList() {
         let langMenu = { id: '1', langMenu: true, path: '/' };

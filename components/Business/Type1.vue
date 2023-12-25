@@ -44,8 +44,8 @@
 
   import Bg_1 from '~/assets/images/business/business_01.jpg';
   import Bg_2 from '~/assets/images/business/business_02.jpg';
+  import Bg_3 from '~/assets/images/business/business_06.jpg';
   import Bg_4 from '~/assets/images/business/business_03.jpg';
-  import Bg_3 from '~/assets/images/about/about_04.jpg';
 
   export default {
     head() {
@@ -57,7 +57,9 @@
             hid: 'description',
             name: 'description',
             content:
-              this.$t('business.type1.title') + '|' + this.$t('SITE_ROOT_TITLE'),
+              this.$t('business.type1.title') +
+              '|' +
+              this.$t('SITE_ROOT_TITLE'),
           },
         ],
       };
@@ -71,8 +73,7 @@
       SectionMain,
     },
     data() {
-      return {
-      };
+      return {};
     },
     computed: {
       meta() {
@@ -144,7 +145,7 @@
               this.$t('business.type1.serviceSectionList.item4.tips5'),
               this.$t('business.type1.serviceSectionList.item4.tips6'),
             ],
-            img: 'https://img.freepik.com/free-photo/woman-showing-with-one-hand-mini-house-real-state-concept-ai-generative_123827-24098.jpg?size=626&ext=jpg&uid=R116380372&ga=GA1.2.1174743762.1702278788&semt=sph',
+            img: Bg_3,
             position: 'right',
             // hiddenIcon: true,
             hiddenBtn: true,

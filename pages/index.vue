@@ -33,7 +33,11 @@
   import SectionMain from '~/components/SectionMain/SectionMain.vue';
   import NewSection from '~/components/NewSection/NewSection.vue';
 
-  import Bg_1 from '~/assets/images/home/01.jpg';
+  import home_01 from '~/assets/images/home/home_01.jpg';
+  import home_02 from '~/assets/images/home/home_02.jpg';
+  import home_03 from '~/assets/images/home/home_03.jpg';
+  import home_04 from '~/assets/images/home/home_04.jpg';
+
 
   export default {
     head() {
@@ -57,7 +61,8 @@
       NewSection,
     },
     data() {
-      return {};
+      return {
+      };
     },
 
     mounted() {
@@ -162,8 +167,7 @@
               this.$t('home.serviceSectionList.item1.tips3'),
               this.$t('home.serviceSectionList.item1.tips4'),
             ],
-            // img: Bg_1,
-            img: 'https://img.freepik.com/premium-photo/property-management-real-estate-business-housing_777271-2538.jpg?size=626&ext=jpg&uid=R116380372&ga=GA1.2.1174743762.1702278788&semt=sph',
+            img: home_01,
             position: 'left',
             path: '/business/type1',
           },
@@ -175,8 +179,7 @@
               this.$t('home.serviceSectionList.item2.tips1'),
               this.$t('home.serviceSectionList.item2.tips2'),
             ],
-            // img: Bg_1,
-            img: 'https://img.freepik.com/premium-photo/real-estate-agent-success-job-tranfer-finished-building-project-home-buyer_36650-137.jpg?size=626&ext=jpg&uid=R116380372&ga=GA1.2.1174743762.1702278788&semt=sph',
+            img: home_02,
             position: 'right',
             path: '/business/type2',
           },
@@ -189,8 +192,7 @@
               this.$t('home.serviceSectionList.item3.tips2'),
               this.$t('home.serviceSectionList.item3.tips3'),
             ],
-            // img: 'https://t4.ftcdn.net/jpg/00/68/82/11/240_F_68821109_I26KMVHzv1zm1fpCQBrRepaHOZABZILh.jpg',
-            img: 'https://img.freepik.com/free-photo/doctors-hands-holding-medical-care-objects_53876-138344.jpg?size=626&ext=jpg&uid=R116380372&ga=GA1.2.1174743762.1702278788&semt=sph',
+            img: home_03,
             position: 'left',
             path: '/business/type3',
           },
@@ -203,7 +205,7 @@
               this.$t('home.serviceSectionList.item4.tips2'),
               this.$t('home.serviceSectionList.item4.tips3'),
             ],
-            img: 'https://img.freepik.com/premium-photo/tourism-vacation-concept_670147-8749.jpg?size=626&ext=jpg&uid=R116380372&ga=GA1.2.1174743762.1702278788&semt=sph',
+            img: home_04,
             position: 'right',
             path: '/business/type4',
           },

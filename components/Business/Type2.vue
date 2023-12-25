@@ -298,7 +298,9 @@
             hid: 'description',
             name: 'description',
             content:
-              this.$t('business.type2.title') + '|' + this.$t('SITE_ROOT_TITLE'),
+              this.$t('business.type2.title') +
+              '|' +
+              this.$t('SITE_ROOT_TITLE'),
           },
         ],
       };
@@ -371,7 +373,7 @@
   .vc_custom_1650504512852
     padding-top: 200px !important
     padding-bottom: 236px !important
-    background-image: url(https://img.freepik.com/free-photo/happy-young-asian-couple-realtor-agent_7861-1032.jpg?size=626&ext=jpg&uid=R116380372&ga=GA1.2.1174743762.1702278788&semt=sph) !important
+    background-image: url('~/assets/images/business/business_07.jpg') !important
     background-position: center !important
     background-repeat: no-repeat !important
     background-size: cover !important

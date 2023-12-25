@@ -459,7 +459,7 @@
   .vc_custom_1650505823182
     padding-top: 200px !important
     padding-bottom: 200px !important
-    background-image: url(https://img.freepik.com/free-photo/view-3d-airplane-with-travel-destination-landscape_23-2151022185.jpg?ga=GA1.1.1174743762.1702278788&semt=ais_ai_generated) !important
+    background-image: url('~/assets/images/business/business_type4_05.jpg') !important
     background-position: center !important
     background-repeat: no-repeat !important
     background-size: cover !important

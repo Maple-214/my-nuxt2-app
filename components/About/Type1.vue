@@ -40,7 +40,7 @@
                               class="map"
                               @click="searchGoogle"
                               style="height: 450px"
-                              src="/images/about/map.jpg"
+                              :src="HOST + '/images/about/map.jpg'"
                               alt=""
                             />
                           </figure>
@@ -110,6 +110,7 @@
 <script>
   import SecondaryBanner from '../SecondaryBanner/SecondaryBanner.vue';
   import SectionMain from '~/components/SectionMain/SectionMain.vue';
+  import { HOST } from '~/config/index';
   import Bg_1 from '~/assets/images/about/about_01.jpg';
   import Bg_2 from '~/assets/images/about/about_02.jpg';
   import Bg_3 from '~/assets/images/about/about_03.jpg';
@@ -139,7 +140,9 @@
       },
     },
     data() {
-      return {};
+      return {
+        HOST,
+      };
     },
     computed: {
       meta() {

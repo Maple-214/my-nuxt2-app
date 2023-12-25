@@ -252,7 +252,6 @@
   import business_type3_03 from '~/assets/images/business/business_type3_03.jpg';
   import business_type3_04 from '~/assets/images/business/business_type3_04.jpg';
 
-
   export default {
     head() {
       return {
@@ -281,7 +280,7 @@
         business_type3_01,
         business_type3_02,
         business_type3_03,
-        business_type3_04
+        business_type3_04,
       };
     },
     computed: {
@@ -299,7 +298,7 @@
             description: this.$t(
               'business.type3.serviceList.item1.description',
             ),
-            img:business_type3_01
+            img: business_type3_01,
           },
           {
             id: 2,
@@ -307,7 +306,7 @@
             description: this.$t(
               'business.type3.serviceList.item2.description',
             ),
-            img:business_type3_02
+            img: business_type3_02,
           },
           {
             id: 3,
@@ -315,7 +314,7 @@
             description: this.$t(
               'business.type3.serviceList.item3.description',
             ),
-            img:business_type3_03
+            img: business_type3_03,
           },
           {
             id: 4,
@@ -323,7 +322,7 @@
             description: this.$t(
               'business.type3.serviceList.item4.description',
             ),
-            img:business_type3_04
+            img: business_type3_04,
           },
         ];
       },
@@ -461,7 +460,7 @@
   .vc_custom_1650505823182
     padding-top: 200px !important
     padding-bottom: 200px !important
-    background-image: url(https://img.freepik.com/free-photo/doctor-with-stethoscope-hands-hospital-background_1423-1.jpg?size=626&ext=jpg&uid=R116380372&ga=GA1.2.1174743762.1702278788&semt=sph) !important
+    background-image: url('~/assets/images/business/business_type3_05.jpg') !important
     background-position: center !important
     background-repeat: no-repeat !important
     background-size: cover !important

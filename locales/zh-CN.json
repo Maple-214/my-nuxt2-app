@@ -697,17 +697,20 @@
     }
   },
   "news": {
-    "type1": {
-      "title": "不动产信息"
-    },
-    "type2": {
-      "title": "医疗信息"
-    },
-    "type3": {
-      "title": "旅行信息"
-    },
-    "type4": {
-      "title": "企业信息"
+    "section": {
+      "title": "新着情報",
+      "type1": {
+        "title": "不动产信息"
+      },
+      "type2": {
+        "title": "医疗信息"
+      },
+      "type3": {
+        "title": "旅行信息"
+      },
+      "type4": {
+        "title": "企业信息"
+      }
     },
     "detail": {
       "title": "新闻详情"

@@ -8,7 +8,7 @@
               class="kd-section-title vc_col-lg-6 vc_col-sm-8 text-center kd-animated fadeIn vc_custom_1649751022108 kd-animate"
               data-animation-delay="200"
             >
-              <h2 class="separator_off">新着情報</h2>
+              <h2 class="separator_off">{{ $t('news.section.title') }}</h2>
               <h6 class="subtitle">News</h6>
             </header>
           </div>
@@ -27,7 +27,9 @@
             @click="selectTab(index)"
             :class="{ active: activeTab === index }"
           >
-            <span>{{ nav.title }}</span>
+            <span :class="{ active: activeTab === index }">{{
+              nav.title
+            }}</span>
           </li>
         </ul>
         <div
@@ -45,8 +47,8 @@
                 {{
                   o.title
                 }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              </option></select
-            >
+              </option>
+            </select>
           </div>
         </div>
         <section
@@ -66,29 +68,31 @@
         >
           <div
             v-if="item.content"
-            v-for="content in item.content"
+            v-for="contents in item.content"
             class="large-3 medium-3 columns iblog-item"
-            @click="toNewsDetail(content.id)"
+            @click="toNewsDetail(item.id, contents.id)"
           >
             <div class="mod modBlogPost" data-connectors="1">
               <a>
-                <img :alt="content.title" :src="content.img" />
+                <img :alt="contents.title" :src="HOST + contents.img" />
               </a>
               <div class="content shadow">
                 <p class="date">
-                  <i class="iconfont icon-datebox"></i> &nbsp;2019-03-12
+                  <i class="iconfont icon-datebox"></i> &nbsp;{{
+                    contents.time
+                  }}
                 </p>
                 <h4 class="iblog-title">
-                  <a :title="content.title">
-                    {{ content.title }}
+                  <a :title="contents.title">
+                    {{ contents.title }}
                   </a>
                 </h4>
                 <p class="desc">
-                  {{ content.desc }}
+                  {{ contents.tex }}
                 </p>
                 <div class="tags">
-                  <nuxt-link to="/news"
-                    >阅读更多 &nbsp;<i class="fa fa-angle-double-right"></i
+                  <nuxt-link :to="'/news/' + item.id"
+                    >Read More &nbsp;<i class="fa fa-angle-double-right"></i
                   ></nuxt-link>
                 </div>
               </div>
@@ -100,6 +104,22 @@
   </div>
 </template>
 <script>
+  import { HOST } from '~/config/index';
+  import jaType1 from '~/mock/news/ja-type1.json';
+  import zhType1 from '~/mock/news/zh-type1.json';
+  import enType1 from '~/mock/news/en-type1.json';
+
+  import jaType2 from '~/mock/news/ja-type2.json';
+  import zhType2 from '~/mock/news/zh-type2.json';
+  import enType2 from '~/mock/news/en-type2.json';
+
+  import jaType3 from '~/mock/news/ja-type3.json';
+  import zhType3 from '~/mock/news/zh-type3.json';
+  import enType3 from '~/mock/news/en-type3.json';
+
+  import jaType4 from '~/mock/news/ja-type4.json';
+  import zhType4 from '~/mock/news/zh-type4.json';
+  import enType4 from '~/mock/news/en-type4.json';
   export default {
     name: '',
     components: {},
@@ -108,162 +128,89 @@
     data() {
       return {
         activeTab: 0, // 默认显示第一个导航项
-        navItems: [
-          { title: '不動産情報' },
-          { title: '医療情報' },
-          { title: '旅行情報' },
-          { title: '企業情報' },
-        ],
         contentItems: [
           {
-            id: 1,
+            id: 'type1',
             activeTab: 0,
-            content: [
-              {
-                id: 1,
-                title: '做好网站设计这些规范准则要知晓',
-                desc: '一个网站的建设最关键都就是页面的设计了，它是一件非常复杂还有繁琐的工作，因为在设计的过程中考虑的因素有很多，根据客户的需求不同修改的方向...',
-                date: '2023-12-03',
-                img: 'https://tokyo-happiness.net/wp-content/uploads/unnamed-1-899x1024.jpg',
-              },
-              {
-                id: 2,
-                title: '做好网站设计这些规范准则要知晓',
-                desc: '一个网站的建设最关键都就是页面的设计了，它是一件非常复杂还有繁琐的工作，因为在设计的过程中考虑的因素有很多，根据客户的需求不同修改的方向...',
-                date: '2023-12-03',
-                img: 'https://tokyo-happiness.net/wp-content/uploads/unnamed-1-899x1024.jpg',
-              },
-              {
-                id: 3,
-                title: '做好网站设计这些规范准则要知晓',
-                desc: '一个网站的建设最关键都就是页面的设计了，它是一件非常复杂还有繁琐的工作，因为在设计的过程中考虑的因素有很多，根据客户的需求不同修改的方向...',
-                date: '2023-12-03',
-                img: 'https://tokyo-happiness.net/wp-content/uploads/unnamed-1-899x1024.jpg',
-              },
-              {
-                id: 4,
-                title: '做好网站设计这些规范准则要知晓',
-                desc: '一个网站的建设最关键都就是页面的设计了，它是一件非常复杂还有繁琐的工作，因为在设计的过程中考虑的因素有很多，根据客户的需求不同修改的方向...',
-                date: '2023-12-03',
-                img: 'https://tokyo-happiness.net/wp-content/uploads/unnamed-1-899x1024.jpg',
-              },
-            ],
+            content: [],
           },
           {
-            id: 2,
+            id: 'type2',
             activeTab: 1,
-            content: [
-              {
-                id: 1,
-                title: '做好网站设计这些规范准则要知晓',
-                desc: '一个网站的建设最关键都就是页面的设计了，它是一件非常复杂还有繁琐的工作，因为在设计的过程中考虑的因素有很多，根据客户的需求不同修改的方向...',
-                date: '2023-12-03',
-                img: 'https://tokyo-happiness.net/wp-content/uploads/unnamed-1-899x1024.jpg',
-              },
-              {
-                id: 2,
-                title: '做好网站设计这些规范准则要知晓',
-                desc: '一个网站的建设最关键都就是页面的设计了，它是一件非常复杂还有繁琐的工作，因为在设计的过程中考虑的因素有很多，根据客户的需求不同修改的方向...',
-                date: '2023-12-03',
-                img: 'https://tokyo-happiness.net/wp-content/uploads/unnamed-1-899x1024.jpg',
-              },
-              {
-                id: 3,
-                title: '做好网站设计这些规范准则要知晓',
-                desc: '一个网站的建设最关键都就是页面的设计了，它是一件非常复杂还有繁琐的工作，因为在设计的过程中考虑的因素有很多，根据客户的需求不同修改的方向...',
-                date: '2023-12-03',
-                img: 'https://tokyo-happiness.net/wp-content/uploads/unnamed-1-899x1024.jpg',
-              },
-            ],
+            content: [],
           },
           {
-            id: 3,
+            id: 'type3',
             activeTab: 2,
-            content: [
-              {
-                id: 1,
-                title: '做好网站设计这些规范准则要知晓',
-                desc: '一个网站的建设最关键都就是页面的设计了，它是一件非常复杂还有繁琐的工作，因为在设计的过程中考虑的因素有很多，根据客户的需求不同修改的方向...',
-                date: '2023-12-03',
-                img: 'https://tokyo-happiness.net/wp-content/uploads/unnamed-1-899x1024.jpg',
-              },
-              {
-                id: 2,
-                title: '做好网站设计这些规范准则要知晓',
-                desc: '一个网站的建设最关键都就是页面的设计了，它是一件非常复杂还有繁琐的工作，因为在设计的过程中考虑的因素有很多，根据客户的需求不同修改的方向...',
-                date: '2023-12-03',
-                img: 'https://tokyo-happiness.net/wp-content/uploads/unnamed-1-899x1024.jpg',
-              },
-              {
-                id: 3,
-                title: '做好网站设计这些规范准则要知晓',
-                desc: '一个网站的建设最关键都就是页面的设计了，它是一件非常复杂还有繁琐的工作，因为在设计的过程中考虑的因素有很多，根据客户的需求不同修改的方向...',
-                date: '2023-12-03',
-                img: 'https://tokyo-happiness.net/wp-content/uploads/unnamed-1-899x1024.jpg',
-              },
-              {
-                id: 4,
-                title: '做好网站设计这些规范准则要知晓',
-                desc: '一个网站的建设最关键都就是页面的设计了，它是一件非常复杂还有繁琐的工作，因为在设计的过程中考虑的因素有很多，根据客户的需求不同修改的方向...',
-                date: '2023-12-03',
-                img: 'https://tokyo-happiness.net/wp-content/uploads/unnamed-1-899x1024.jpg',
-              },
-            ],
+            content: [],
           },
           {
-            id: 4,
+            id: 'type4',
             activeTab: 3,
-            content: [
-              {
-                id: 1,
-                title: '做好网站设计这些规范准则要知晓',
-                desc: '一个网站的建设最关键都就是页面的设计了，它是一件非常复杂还有繁琐的工作，因为在设计的过程中考虑的因素有很多，根据客户的需求不同修改的方向...',
-                date: '2023-12-03',
-                img: 'https://tokyo-happiness.net/wp-content/uploads/unnamed-1-899x1024.jpg',
-              },
-              {
-                id: 2,
-                title: '做好网站设计这些规范准则要知晓',
-                desc: '一个网站的建设最关键都就是页面的设计了，它是一件非常复杂还有繁琐的工作，因为在设计的过程中考虑的因素有很多，根据客户的需求不同修改的方向...',
-                date: '2023-12-03',
-                img: 'https://tokyo-happiness.net/wp-content/uploads/unnamed-1-899x1024.jpg',
-              },
-              {
-                id: 3,
-                title: '做好网站设计这些规范准则要知晓',
-                desc: '一个网站的建设最关键都就是页面的设计了，它是一件非常复杂还有繁琐的工作，因为在设计的过程中考虑的因素有很多，根据客户的需求不同修改的方向...',
-                date: '2023-12-03',
-                img: 'https://tokyo-happiness.net/wp-content/uploads/unnamed-1-899x1024.jpg',
-              },
-            ],
+            content: [],
           },
         ],
+        HOST
       };
     },
-    computed: {},
+    computed: {
+      navItems() {
+        return [
+          { title: this.$t('news.section.type1.title') },
+          { title: this.$t('news.section.type2.title') },
+          { title: this.$t('news.section.type3.title') },
+          { title: this.$t('news.section.type4.title') },
+        ];
+      },
+    },
     watch: {},
+    created() {
+      if (process.client) {
+        const lang = window.localStorage.getItem('lang');
+        switch (lang) {
+          case 'ja':
+            this.contentItems[0].content = jaType1.slice(-4);
+            this.contentItems[1].content = jaType2.slice(-4);
+            this.contentItems[2].content = jaType3.slice(-4);
+            this.contentItems[3].content = jaType4.slice(-4);
+            break;
+          case 'en':
+            this.contentItems[0].content = enType1.slice(-4);
+            this.contentItems[1].content = enType2.slice(-4);
+            this.contentItems[2].content = enType3.slice(-4);
+            this.contentItems[3].content = enType4.slice(-4);
+            break;
+          default:
+            this.contentItems[0].content = zhType1.slice(-4);
+            this.contentItems[1].content = zhType2.slice(-4);
+            this.contentItems[2].content = zhType3.slice(-4);
+            this.contentItems[3].content = zhType4.slice(-4);
+            break;
+        }
+      }
+    },
     mounted() {},
     methods: {
       selectTab(tab) {
         this.activeTab = tab;
       },
-      toNewsDetail(id) {
-        this.$router.push(`/news/type1/${id}`);
+      toNewsDetail(path, id) {
+        console.log({ path, id });
+        this.$router.push(`/news/${path}/${id}`);
       },
     },
   };
 </script>
 <style lang="stylus" scoped>
-    // .vc_grid-filter.vc_grid-filter-color-grey>.vc_grid-filter-item.vc_active
-    //   background-color: #0092FF;
-    // .vc_grid-filter.vc_grid-filter-color-grey>.vc_grid-filter-item.vc_active>span
-    //   color: #fff
     .vc_grid-filter.vc_grid-filter-color-grey>.vc_grid-filter-item:hover
       background-color: #fff
     .content-area .vc_grid-filter>.vc_grid-filter-item span:hover:after
       width: 100%
+    .content-area .vc_grid-filter>.vc_grid-filter-item .active:after
+      width: 100%
     #index-news .modBlogPost .content {
         padding: 20px 20px 15px;
+        cursor: pointer
     }
     #index-news .modBlogPost .shadow
       box-shadow: 0 0 5px rgba(0,0,0,.2);

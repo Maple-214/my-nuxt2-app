@@ -52,7 +52,7 @@ export default {
     { src: '~/plugins/jquery.js', ssr: false },
     '~/plugins/vee-validate.js',
     '~/plugins/fullWidthRowHandler.js',
-    '~/plugins/initI18n'
+    '~/plugins/initI18n',
     // '~/plugins/languageSwitcher.js'
   ],
 

@@ -684,18 +684,22 @@
     }
   },
   "news": {
-    "type1": {
-      "title": "不動産情報"
+    "section": {
+      "title": "新着情報",
+      "type1": {
+        "title": "不動産情報"
+      },
+      "type2": {
+        "title": "医療情報"
+      },
+      "type3": {
+        "title": "旅行情報"
+      },
+      "type4": {
+        "title": "企業情報"
+      }
     },
-    "type2": {
-      "title": "医療情報"
-    },
-    "type3": {
-      "title": "旅行情報"
-    },
-    "type4": {
-      "title": "企業情報"
-    },
+
     "detail": {
       "title": "ニュース詳細"
     }

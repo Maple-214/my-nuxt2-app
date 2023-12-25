@@ -28,14 +28,21 @@
                           {{ observerCompanyDetails.location }}
                           <p></p>
                           <figure>
-                            <iframe
+                            <!-- <iframe
                               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3249.0113876072032!2d139.63683267604188!3d35.4792620726532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c254e0e968d%3A0x4898316fe26cf573!2z44CSMjIxLTAwNDMg56We5aWI5bed55yM5qiq5rWc5biC56We5aWI5bed5Yy65paw55S677yV4oiS77yUIOODqeOCpOOCquODs-OCuuODnuODs-OCt-ODp-ODs-elnuWliOW3neaWsOeUuuesrO-8kiAwMTAy!5e0!3m2!1sja!2sjp!4v1703082783236!5m2!1sja!2sjp"
                               height="450"
                               style="border: 0; width: 100%"
                               allowfullscreen=""
                               loading="lazy"
                               referrerpolicy="no-referrer-when-downgrade"
-                            ></iframe>
+                            ></iframe> -->
+                            <img
+                              class="map"
+                              @click="searchGoogle"
+                              style="height: 450px"
+                              src="/images/about/map.jpg"
+                              alt=""
+                            />
                           </figure>
                           <!-- <ul>
                             <li class="iconfont icon-duigou">
@@ -61,7 +68,9 @@
                       </tr>
                       <tr>
                         <th>{{ $t('about.type1.adress.tex8') }}</th>
-                        <td>{{ observerCompanyDetails.representativeDirector }}</td>
+                        <td>
+                          {{ observerCompanyDetails.representativeDirector }}
+                        </td>
                       </tr>
                       <tr>
                         <th>{{ $t('about.type1.adress.tex10') }}</th>
@@ -241,16 +250,27 @@
     },
     watch: {},
     mounted() {},
-    methods: {},
+    methods: {
+      searchGoogle() {
+        const address = encodeURIComponent(
+          this.observerCompanyDetails.location,
+        );
+        const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${address}`;
+
+        // 打开新窗口并访问谷歌地图搜索页面
+        window.open(googleMapsUrl, '_blank');
+      },
+    },
   };
 </script>
 <style lang="stylus" scoped>
   .about
     .vc_custom_1545322058397
       padding-bottom:0 !important
-  .vc_custom_1650501003908
-    margin-top: 50px !important
-  .about
+    .vc_custom_1650501003908
+      margin-top: 50px !important
     h3
       text-align: center
+    .map
+      cursor: pointer
 </style>

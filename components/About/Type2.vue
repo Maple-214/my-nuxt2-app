@@ -114,7 +114,6 @@
     },
     watch: {},
     mounted() {
-      console.log({ observerCompanyDetails: this.observerCompanyDetails });
     },
     methods: {},
   };

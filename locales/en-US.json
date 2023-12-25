@@ -692,18 +692,22 @@
     }
   },
   "news": {
-    "type1": {
-      "title": "Real Estate Information"
+    "section": {
+      "title": "New Information",
+      "type1": {
+        "title": "Real Estate Information"
+      },
+      "type2": {
+        "title": "Medical Information"
+      },
+      "type3": {
+        "title": "Travel Information"
+      },
+      "type4": {
+        "title": "Corporate Information"
+      }
     },
-    "type2": {
-      "title": "Medical Information"
-    },
-    "type3": {
-      "title": "Travel Information"
-    },
-    "type4": {
-      "title": "Corporate Information"
-    },
+
     "detail": {
       "title": "News Details"
     }

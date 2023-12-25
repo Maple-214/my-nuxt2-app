@@ -196,26 +196,6 @@
         isMobile: false,
         logoImg,
         langMenu: {},
-        // infoList: [
-        //   {
-        //     id: 1,
-        //     title: '03-6206-8815',
-        //     icon: 'icon-phone-fill',
-        //     schema: 'tel:03-6206-8815',
-        //   },
-        //   {
-        //     id: 2,
-        //     title: 'info@seabiz.co.jp',
-        //     icon: 'icon-youjian',
-        //     schema: 'mailto:info@seabiz.co.jp',
-        //   },
-        //   {
-        //     id: 3,
-        //     title: '10:00-18:00',
-        //     icon: 'icon-shizhong',
-        //     schema: '',
-        //   },
-        // ],
       };
     },
     computed: {
@@ -420,7 +400,6 @@
     },
     watch: {},
     mounted() {
-      console.log({topNav});
       this.checkScreenWidth();
       // 在组件挂载时添加窗口宽度变化的监听器
       window.addEventListener('resize', this.handleResize);

@@ -14,7 +14,7 @@
             </div>
           </div>
           <figure class="news_img">
-            <img :src="list.img" :alt="list.tex" />
+            <img :src="HOST + list.img" :alt="list.tex" />
           </figure>
           <p class="news_txt">
             <a class="cur">{{ list.title }}</a>
@@ -27,6 +27,8 @@
 </template>
 <script>
   import Pagination from '~/components/Pagination/index.vue';
+  import { HOST } from '~/config/index';
+
 
   export default {
     name: '',
@@ -45,7 +47,9 @@
       },
     },
     data() {
-      return {};
+      return {
+        HOST
+      };
     },
     computed: {},
     watch: {},

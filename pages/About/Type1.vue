@@ -18,9 +18,7 @@
     props: {},
     async asyncData({ app, params }) {},
     data() {
-      return {
-        lang: this.$i18n.locale,
-      };
+      return {};
     },
 
     computed: {

@@ -1,0 +1,126 @@
+{
+  "title": "We have an employment system for recent graduates and those with no experience in IT engineering.",
+  "data": [
+    {
+      "title": "Qualifications",
+      "desc": [
+        "Graduates or expected graduates from junior colleges, four or six-year universities or graduate schools, as well as those who have graduated or completed vocational training schools (applicants with work experience are also welcome).",
+        "Nationality is not a barrier (Japanese language proficiency is required).",
+        "Proficiency in English is highly welcome.",
+        "No experience is okay! We value an honest and proactive attitude towards work."
+      ],
+      "list": [
+        "Applicants of any nationality are welcome (Japanese language proficiency is required).",
+        "Proficiency in English is highly welcome.",
+        "No experience is okay! We value an honest and proactive attitude towards work."
+      ]
+    },
+    {
+      "title": "Ideal Candidate",
+      "desc": [],
+      "list": [
+        "Effective communication and coordination skills with team members and clients.",
+        "A sense of responsibility, with the ability to handle tasks accurately, seriously, and sincerely.",
+        "Capable of advancing work responsibly while coordinating with the surroundings.",
+        "Proactively takes on new challenges.",
+        "Adaptable to business changes."
+      ]
+    },
+    {
+      "title": "Remuneration",
+      "desc": [],
+      "list": [
+        "Starting salary from 180,000 yen per month (experience is preferred).",
+        "※ Regular employee hiring is available.",
+        "No experience is okay! We value an honest and proactive attitude towards work."
+      ]
+    },
+    {
+      "title": "Welfare Benefits",
+      "desc": [],
+      "list": ["Various social insurance coverage."]
+    },
+    {
+      "title": "Holidays",
+      "desc": [],
+      "list": [
+        "Annual holidays of 120 days or more.",
+        "Complete two-day weekend (Saturday and Sunday)."
+      ]
+    },
+    {
+      "title": "Application Method",
+      "desc": ["Email Address: info@sea-itsoft.com"],
+      "atex": "Download the resume template here",
+      "list": [
+        "Fill out the resume template and send it to the email address above.",
+        "Proficiency in English is highly welcome.",
+        "No experience is okay! We value an honest and proactive attitude towards work."
+      ]
+    },
+    {
+      "title": "Job Openings",
+      "flag": true,
+      "data": [
+        {
+          "title": "Development Engineer",
+          "desc": [
+            "Experienced candidates will be entrusted with diverse tasks, including projects for major clients and cutting-edge fields.",
+            "【Skills】",
+            "Applicants with experience in the design and development of various systems are welcome (inexperienced individuals are also welcome)."
+          ],
+          "list": [
+            "Development Languages: Java, PHP, VB.Net, PRA, PEGA, C, etc.",
+            "Databases: Oracle, SQL Server, PostgreSQL, MySQL",
+            "Operating Systems: Windows, Linux"
+          ]
+        },
+        {
+          "title": "Operations and Maintenance Engineer",
+          "desc": [
+            "Responsible for maintaining and monitoring various systems, addressing issues during operation, etc."
+          ],
+          "list": [
+            "System operation monitoring",
+            "Security measures",
+            "Data backup",
+            "Troubleshooting and bug recovery",
+            "Adding applications",
+            "Client terminal management"
+          ]
+        },
+        {
+          "title": "Infrastructure Engineer",
+          "desc": [
+            "【Skills】",
+            "Experience in system monitoring/operations tasks",
+            "Basic and administrator functions of Win and Linux",
+            "Knowledge of TR/SW functions at CCNA level",
+            "Business knowledge at the level of JP1 certified engineers, and administrator functions of various consoles"
+          ],
+          "list": [
+            "Design, construction, and maintenance of network and servers",
+            "Requirements definition, design, and construction of My Number System subsystems",
+            "Server operation monitoring for cloud services",
+            "Design and construction of virtualized environments",
+            "Operation and maintenance of network equipment",
+            "Introduction, design, and construction of databases, and many more"
+          ]
+        },
+        {
+          "title": "Monitoring Engineer",
+          "desc": [
+            "Responsible for maintaining and monitoring various systems, addressing issues during operation, etc."
+          ],
+          "list": [
+            "Operation monitoring and primary recovery agency for various servers",
+            "System operation and command operations following procedure manuals",
+            "Negotiation and reporting with customers and consignors",
+            "Compilation of various business tasks",
+            "Progress management and reporting"
+          ]
+        }
+      ]
+    }
+  ]
+}

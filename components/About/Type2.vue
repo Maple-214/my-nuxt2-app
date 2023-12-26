@@ -36,6 +36,12 @@
                                 v-if="
                                   l.includes(
                                     '履歴書テンプレートをご入力いただき、上記宛までお送りください。',
+                                  ) ||
+                                  l.includes(
+                                    '请填写简历模板并发送至上述邮箱地址。',
+                                  ) ||
+                                  l.includes(
+                                    'Fill out the resume template and send it to the email address above.',
                                   )
                                 "
                                 href="https://sea-itsoft.com/wp-content/uploads/2021/11/Sea-rireki.xlsx"
@@ -113,8 +119,7 @@
       },
     },
     watch: {},
-    mounted() {
-    },
+    mounted() {},
     methods: {},
   };
 </script>

@@ -697,6 +697,7 @@
     }
   },
   "news": {
+    "noMore":"暂无消息",
     "section": {
       "title": "新着情報",
       "type1": {

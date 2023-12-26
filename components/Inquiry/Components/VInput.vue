@@ -23,27 +23,7 @@
           </span> -->
         </span>
       </label>
-      <p v-else>
-        <label>
-          {{ inputInfo.label }}
-          <br />
-          <span class="wpcf7-form-control-wrap">
-            <textarea
-              cols="40"
-              rows="10"
-              class="wpcf7-form-control wpcf7-textarea"
-              v-model="inputInfo.value"
-              :placeholder="inputInfo.placeholder"
-              @input="
-                $emit('input', {
-                  newValue: inputInfo.value,
-                  tag: inputInfo.tag,
-                })
-              "
-            ></textarea>
-          </span>
-        </label>
-      </p>
+      
     </ValidationProvider>
   </ValidationObserver>
 </template>

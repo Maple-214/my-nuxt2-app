@@ -56,6 +56,24 @@
                       @input="updateFormName"
                     />
                   </p>
+                  <!-- textarea特殊处理 -->
+                  <p>
+                    <label>
+                      {{ vInputList[7].label }}
+                      <br />
+                      <span class="wpcf7-form-control-wrap">
+                        <textarea
+                          cols="40"
+                          rows="10"
+                          class="wpcf7-form-control wpcf7-textarea"
+                          v-model="formData.message"
+                          :placeholder="vInputList[7].placeholder"
+                        ></textarea>
+                      </span>
+                    </label>
+                  </p>
+
+
                   <p>
                     <span class="wpcf7-form-control-wrap"
                       ><span class="wpcf7-form-control wpcf7-acceptance"
@@ -253,9 +271,9 @@
           {
             id: 8,
             rules: 'positive',
-            label: this.$t('inquiry.type2.form.vInputList.item7.label'),
+            label: this.$t('inquiry.type2.form.vInputList.item8.label'),
             placeholder: this.$t(
-              'inquiry.type2.form.vInputList.item7.placeholder',
+              'inquiry.type2.form.vInputList.item8.placeholder',
             ),
             type: 'textarea',
             tag: 'message',

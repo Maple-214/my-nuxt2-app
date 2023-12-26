@@ -86,11 +86,13 @@
           </div>
           <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 forth-widget-area">
             <div id="text-3" class="footer_widget widget widget_text">
-              <h5 class="widget-title"><span>{{ $t('SITE_HOME_TITLE') }}</span></h5>
+              <h5 class="widget-title">
+                <span>{{ $t('SITE_HOME_TITLE') }}</span>
+              </h5>
               <div class="textwidget">
                 <p>
-                  TEL：03-6206-8815<br />
-                  FAX：03-6206-8815<br />
+                  TEL：045-548-4991<br />
+                  FAX：045-548-4992<br />
                   Mail：info@seabiz.co.jp
                 </p>
               </div>
@@ -113,8 +115,11 @@
     mixins: [],
     props: {},
     data() {
-      return {
-        ServiceList: [
+      return {};
+    },
+    computed: {
+      ServiceList() {
+        return [
           {
             id: 1,
             title: this.$t('header.nav_menu.item3.children.li1'),
@@ -140,8 +145,10 @@
             title: this.$t('header.nav_menu.item3.children.li5'),
             path: '/business/type5',
           },
-        ],
-        ContactList: [
+        ];
+      },
+      ContactList() {
+        return [
           {
             id: 1,
             title: this.$t('header.nav_menu.item6.children.li1'),
@@ -157,11 +164,13 @@
             title: this.$t('header.nav_menu.item6.children.li3'),
             path: '/inquiry/type3',
           },
-        ],
-        AboutList: [
+        ];
+      },
+      AboutList() {
+        return [
           {
             id: 1,
-            title:  this.$t('header.nav_menu.item4.children.li1'),
+            title: this.$t('header.nav_menu.item4.children.li1'),
             path: '/about/type1',
           },
           {
@@ -169,10 +178,9 @@
             title: this.$t('header.nav_menu.item4.children.li2'),
             path: '/about/type2',
           },
-        ],
-      };
+        ];
+      },
     },
-    computed: {},
     watch: {},
     mounted() {},
     methods: {},

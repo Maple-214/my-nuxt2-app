@@ -15,7 +15,7 @@
                 <form
                   @submit.prevent="submitForm"
                   class="wpcf7-form init"
-                  aria-label="コンタクトフォーム"
+                  aria-label=""
                 >
                   <p>
                     <label>{{
@@ -46,13 +46,30 @@
                   </p>
                   <p>
                     <VInput
-                      v-for="(va,index) in vInputList"
+                      v-for="(va, index) in vInputList"
                       :key="va.id"
                       :v-model="formData[va.tag]"
                       :inputInfo="va"
                       @input="updateFormName"
                     />
                   </p>
+                  <!-- textarea特殊处理 -->
+                  <p>
+                    <label>
+                      {{ vInputList[4].label }}
+                      <br />
+                      <span class="wpcf7-form-control-wrap">
+                        <textarea
+                          cols="40"
+                          rows="10"
+                          class="wpcf7-form-control wpcf7-textarea"
+                          v-model="formData.message"
+                          :placeholder="vInputList[4].placeholder"
+                        ></textarea>
+                      </span>
+                    </label>
+                  </p>
+
                   <p>
                     <span class="wpcf7-form-control-wrap"
                       ><span class="wpcf7-form-control wpcf7-acceptance"
@@ -103,7 +120,8 @@
   export default {
     head() {
       return {
-        title: this.$t('inquiry.type1.title') + '|' + this.$t('SITE_ROOT_TITLE'),
+        title:
+          this.$t('inquiry.type1.title') + '|' + this.$t('SITE_ROOT_TITLE'),
         meta: [
           {
             hid: 'description',

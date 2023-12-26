@@ -692,6 +692,8 @@
     }
   },
   "news": {
+    "noMore": "No news yet",
+
     "section": {
       "title": "New Information",
       "type1": {

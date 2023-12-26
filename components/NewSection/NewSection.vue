@@ -37,12 +37,16 @@
           data-vc-grid-filter-select="category"
         >
           <div class="vc_grid-styled-select">
-            <select data-filter="category">
+            <select
+              data-filter="category"
+              @change="selectTabFromSelect"
+              v-model="activeTab"
+            >
               <option
                 v-for="o in navItems"
                 :key="o.title"
                 class="vc_active"
-                value="*"
+                :value="o.id"
               >
                 {{
                   o.title
@@ -51,14 +55,6 @@
             </select>
           </div>
         </div>
-        <section
-          v-for="(content, index) in contentItems"
-          :key="index"
-          v-if="activeTab === index"
-        >
-          <h2>{{ content.title }}</h2>
-          <p>{{ content.description }}</p>
-        </section>
 
         <div
           class="row"
@@ -67,8 +63,9 @@
           v-for="(item, index) in contentItems"
         >
           <div
-            v-if="item.content"
+            v-if="item.content.length > 0"
             v-for="contents in item.content"
+            :key="contents.id"
             class="large-3 medium-3 columns iblog-item"
             @click="toNewsDetail(item.id, contents.id)"
           >
@@ -88,7 +85,7 @@
                   </a>
                 </h4>
                 <p class="desc">
-                  {{ contents.tex }}
+                  {{ contents.tex.replace(/<[^>]+>/g, '') }}
                 </p>
                 <div class="tags">
                   <nuxt-link :to="'/news/' + item.id"
@@ -127,7 +124,7 @@
     props: {},
     data() {
       return {
-        activeTab: 0, // 默认显示第一个导航项
+        activeTab: 3, // 默认显示第一个导航项
         contentItems: [
           {
             id: 'type1',
@@ -150,16 +147,16 @@
             content: [],
           },
         ],
-        HOST
+        HOST,
       };
     },
     computed: {
       navItems() {
         return [
-          { title: this.$t('news.section.type1.title') },
-          { title: this.$t('news.section.type2.title') },
-          { title: this.$t('news.section.type3.title') },
-          { title: this.$t('news.section.type4.title') },
+          { title: this.$t('news.section.type1.title'), id: 0 },
+          { title: this.$t('news.section.type2.title'), id: 1 },
+          { title: this.$t('news.section.type3.title'), id: 2 },
+          { title: this.$t('news.section.type4.title'), id: 3 },
         ];
       },
     },
@@ -194,14 +191,23 @@
       selectTab(tab) {
         this.activeTab = tab;
       },
+      selectTabFromSelect(e) {
+        const currentId = parseInt(e.target.value);
+        this.selectTab(currentId);
+      },
       toNewsDetail(path, id) {
-        console.log({ path, id });
         this.$router.push(`/news/${path}/${id}`);
       },
     },
   };
 </script>
 <style lang="stylus" scoped>
+    .nomore
+      width: 100% !important;
+      display: flex;
+      justify-content: center;
+      align-item: center;
+      min-height: 100px;
     .vc_grid-filter.vc_grid-filter-color-grey>.vc_grid-filter-item:hover
       background-color: #fff
     .content-area .vc_grid-filter>.vc_grid-filter-item span:hover:after
@@ -430,6 +436,7 @@
       margin-top: 0;
       margin-bottom: 0;
       max-width: none;
+      text-align: center
     }
     .row .row:before, .row .row:after {
       content: " ";

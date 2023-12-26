@@ -10,9 +10,10 @@
         <div class="news_img">
           <img :src="HOST + newsDetailInfo.img" alt="" />
         </div>
-        <p class="news_content">
-          {{ newsDetailInfo.tex }}
-        </p>
+        <!-- <p class="news_content">
+          {{  }}
+        </p> -->
+        <div class="news_content" v-html="newsDetailInfo.tex"></div>
       </div>
     </div>
   </div>
@@ -58,6 +59,7 @@
       return {
         HOST,
         newsDetailInfo: {},
+        htmlContent: '<p>This is <strong>bold</strong> text.</p>',
       };
     },
     computed: {
@@ -154,4 +156,6 @@
       margin: 0 0 80px;
       .news_content
         margin-top: 20px
+        p
+          margin-botom: 10px
 </style>

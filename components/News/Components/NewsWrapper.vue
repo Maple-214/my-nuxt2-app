@@ -8,7 +8,7 @@
           :key="list.id"
         >
           <div class="news_info">
-            <time datetime="2023-12-11">2023-12-11</time>
+            <time :datetime="list.time">{{ list.time }}</time>
             <div class="news_tag_list">
               <i v-for="tag in list.tags" class="news_tag_release">{{ tag }}</i>
             </div>
@@ -29,7 +29,6 @@
   import Pagination from '~/components/Pagination/index.vue';
   import { HOST } from '~/config/index';
 
-
   export default {
     name: '',
     components: {
@@ -48,7 +47,7 @@
     },
     data() {
       return {
-        HOST
+        HOST,
       };
     },
     computed: {},

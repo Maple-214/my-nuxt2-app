@@ -39,18 +39,8 @@
       <div class="container">
         <div id="logo">
           <a class="logo" href="/">
-            <img
-              class="fixed-logo"
-              :src="logoImg"
-              width="250"
-              alt=""
-            />
-            <img
-              class="nav-logo"
-              :src="logoImg"
-              width="250"
-              alt=""
-            />
+            <img class="fixed-logo" :src="logoImg" width="250" alt="" />
+            <img class="nav-logo" :src="logoImg" width="250" alt="" />
           </a>
         </div>
         <div class="navbar-header page-scroll">
@@ -180,8 +170,7 @@
   import zhIcon from '~/assets/images/icons/zh_icon.png';
   import jaIcon from '~/assets/images/icons/ja_icon.png';
   import enIcon from '~/assets/images/icons/en_icon.png';
-  import topNav from '~/mock/header/top-nav.json'
-
+  import topNav from '~/mock/header/top-nav.json';
 
   export default {
     name: 'Header',
@@ -525,7 +514,7 @@
           $('html').attr('lang', lang);
           this.initMenuList();
         }
-        window.location.reload()
+        window.location.reload();
       },
       initMenuList() {
         let langMenu = { id: '1', langMenu: true, path: '/' };

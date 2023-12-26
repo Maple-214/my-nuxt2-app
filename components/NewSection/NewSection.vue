@@ -436,7 +436,7 @@
       margin-top: 0;
       margin-bottom: 0;
       max-width: none;
-      text-align: center
+      // text-align: center
     }
     .row .row:before, .row .row:after {
       content: " ";

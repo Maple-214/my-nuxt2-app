@@ -4,13 +4,13 @@
       <ul>
         <li
           @click="toNewsDetail(list.id)"
-          v-for="list in sourceData"
+          v-for="list in currentPageData"
           :key="list.id"
         >
           <div class="news_info">
             <time :datetime="list.time">{{ list.time }}</time>
             <div class="news_tag_list">
-              <i v-for="tag in list.tags" class="news_tag_release">{{ tag }}</i>
+              <i v-for="(tag,index) in list.tags" :key="index" class="news_tag_release">{{ tag }}</i>
             </div>
           </div>
           <figure class="news_img">
@@ -22,7 +22,11 @@
         </li>
       </ul>
     </div>
-    <Pagination :itemsPerPage="5" :totalItems="sourceData.length" />
+    <Pagination
+      :itemsPerPage="itemsPerPage"
+      :totalItems="sourceData.length"
+      @page-change="handlePageChange"
+    />
   </div>
 </template>
 <script>
@@ -33,6 +37,7 @@
     name: '',
     components: {
       Pagination,
+      
     },
     mixins: [],
     props: {
@@ -48,14 +53,26 @@
     data() {
       return {
         HOST,
+        currentPage:1,
+        itemsPerPage:5
       };
     },
-    computed: {},
+    computed: {
+      currentPageData() {
+        const start = (this.currentPage - 1) * this.itemsPerPage;
+        const end = start + this.itemsPerPage;
+        return this.sourceData.slice(start, end);
+      },
+    },
     watch: {},
     mounted() {},
     methods: {
       toNewsDetail(id) {
         this.$router.push(`/news/${this.type}/${id}`);
+      },
+      handlePageChange(page) {
+        // 在这里获取子组件传递过来的 currentPage
+        this.currentPage = page
       },
     },
   };

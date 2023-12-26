@@ -38,16 +38,16 @@
 
 <script>
   export default {
-    name:'ComponentsPagination',
-    props:{
-      itemsPerPage:{
-        type:String | Number,
-        default:10,
+    name: 'ComponentsPagination',
+    props: {
+      itemsPerPage: {
+        type: String | Number,
+        default: 10,
       },
-      totalItems:{
-        type:String | Number,
-        default:10,
-      }
+      totalItems: {
+        type: String | Number,
+        default: 10,
+      },
     },
     data() {
       return {
@@ -56,6 +56,7 @@
         // totalItems: 100, // 新闻总条目数量
       };
     },
+    mounted() {},
     computed: {
       totalPages() {
         return Math.ceil(this.totalItems / this.itemsPerPage);
@@ -85,22 +86,30 @@
     methods: {
       toFirstPage() {
         this.currentPage = 1;
+        this.onPageChange(this.currentPage);
       },
       toLastPage() {
         this.currentPage = this.totalPages;
+        this.onPageChange(this.currentPage);
       },
       nextPage() {
         if (this.currentPage < this.totalPages) {
           this.currentPage += 1;
         }
+        this.onPageChange(this.currentPage);
       },
       prevPage() {
         if (this.currentPage > 1) {
           this.currentPage -= 1;
         }
+        this.onPageChange(this.currentPage);
       },
       goToPage(pageNumber) {
         this.currentPage = pageNumber;
+        this.onPageChange(this.currentPage);
+      },
+      onPageChange(page) {
+        this.$emit('page-change', page);
       },
     },
   };
